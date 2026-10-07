@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: xai_backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+      - ./dataset:/app/dataset
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
