@@ -2,8 +2,8 @@ import os
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader, random_split
 
-TRAIN_DATASET_PATH = '/app/dataset/Training'
-TEST_DATASET_PATH = '/app/dataset/Testing'
+TRAIN_DATASET_PATH = '/app/dataset/archive/Training'
+TEST_DATASET_PATH = '/app/dataset/archive/Testing'
 
 def get_dataloaders(batch_size=32):
     """
@@ -30,7 +30,7 @@ def get_dataloaders(batch_size=32):
 
     #Ładowanie zdjęć
 
-    train_dataset = datasets.ImageFolder(root=DATASET_PATH, transform=train_transforms)
+    train_dataset = datasets.ImageFolder(root=TRAIN_DATASET_PATH, transform=train_transforms)
     test_dataset = datasets.ImageFolder(root=TEST_DATASET_PATH, transform=test_transforms)
 
     class_names = train_dataset.classes

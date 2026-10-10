@@ -2,7 +2,7 @@ import torch.nn as nn
 from torchvision.models import resnet50, ResNet50_Weights
 
 class BrainTumorResNet(nn.Module):
-    def __init__(self, num_classes=4):
+    def __init__(self, num_classes=4, dropout_rate=0.5):
         """
         Architektura klasyfikaotra guzów na podstawie ResNet50 z transfer learningiem.
         """

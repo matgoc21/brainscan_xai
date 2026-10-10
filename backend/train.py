@@ -13,7 +13,7 @@ def train():
     LEARNING_RATE = 0.001
 
     device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
-    print(f("Używane urządzenie: {device}. Początek treningu..."))
+    print(f"Używane urządzenie: {device}. Początek treningu...")
 
     train_loader, test_loader, class_names = get_dataloaders(batch_size=BATCH_SIZE)
 
@@ -28,51 +28,58 @@ def train():
     best_model_wts = copy.deepcopy(model.state_dict())
 
     #Główna pętla epok
+    for epoch in range(EPOCHS):
+        print(f"\nEpoka {epoch+1}/{EPOCHS}")
+        print("="*15)
 
-    for inputs, labels in train_loader:
-        inputs, labels = inputs.to(device), labels.to(device)
+        model.train()
+        running_loss = 0.0
+        running_corrects = 0
 
-        optimizer.zero_grad()
-
-        outputs = model(inputs)
-        loss = criterion(outputs, labels)
-
-        _, preds = torch.max(outputs, 1)
-
-        loss.backward()
-        optimizer.step()
-
-        running_loss += loss.item() * inputs.size(0)
-        running_corrects += torch.sum(preds == labels.data)
-
-    train_loss = running_loss / len(train_loader.dataset)
-    train_acc = running_corrects.double() / len(train_loader.dataset)
-
-    print(f"Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f}")
-
-    model.eval()
-    val_loss = 0.0
-    val_corrects = 0
-
-    with torch.no_grad():
-        for inputs, labels in test_loader:
+        for inputs, labels in train_loader:
             inputs, labels = inputs.to(device), labels.to(device)
+
+            optimizer.zero_grad()
 
             outputs = model(inputs)
             loss = criterion(outputs, labels)
 
             _, preds = torch.max(outputs, 1)
 
-            val_loss += loss.item() * inputs.size(0)
-            val_corrects += torch.sum(preds == labels.data)
-        val_loss = val_loss / len(test_loader.dataset)
-        val_acc = val_corrects.double() / len(test_loader.dataset)
-        print(f"Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.4f}")
+            loss.backward()
+            optimizer.step()
 
-        if val_acc > best_acc:
-            best_acc = val_acc
-            best_model_wts = copy.deepcopy(model.state_dict())
-            print(f"Nowy najlepszy model, nowe wagi modelu zapisane")
+            running_loss += loss.item() * inputs.size(0)
+            running_corrects += torch.sum(preds == labels.data)
+
+        train_loss = running_loss / len(train_loader.dataset)
+        train_acc = running_corrects.double() / len(train_loader.dataset)
+
+        print(f"Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f}")
+
+        model.eval()
+        val_loss = 0.0
+        val_corrects = 0
+
+        with torch.no_grad():
+            for inputs, labels in test_loader:
+                inputs, labels = inputs.to(device), labels.to(device)
+
+                outputs = model(inputs)
+                loss = criterion(outputs, labels)
+
+                _, preds = torch.max(outputs, 1)
+
+                val_loss += loss.item() * inputs.size(0)
+                val_corrects += torch.sum(preds == labels.data)
+            val_loss = val_loss / len(test_loader.dataset)
+            val_acc = val_corrects.double() / len(test_loader.dataset)
+            print(f"Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.4f}")
+
+            if val_acc > best_acc:
+                best_acc = val_acc
+                best_model_wts = copy.deepcopy(model.state_dict())
+                print(f"Nowy najlepszy model, nowe wagi modelu zapisane")
 
         print("\nTrening zakończony.")
         print(f"Najlepsza dokładność walidacji (Best Val Acc): {best_acc:.4f}")
