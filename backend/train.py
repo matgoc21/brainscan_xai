@@ -5,10 +5,10 @@ import copy
 import os
 
 from xai_api.dataset_loader import get_dataloaders
-from xai_api.model import BrainTumorResNet
+from xai_api.model import BrainTumorResNet, CustomCNN
 
 def train():
-    EPOCHS = 10
+    EPOCHS = 30
     BATCH_SIZE = 32
     LEARNING_RATE = 0.001
 
@@ -16,14 +16,15 @@ def train():
     print(f"Używane urządzenie: {device}. Początek treningu...")
 
     train_loader, test_loader, class_names = get_dataloaders(batch_size=BATCH_SIZE)
-
-    model = BrainTumorResNet(num_classes=len(class_names))
+    # Zmiana -> inny model
+    model = CustomCNN(num_classes=len(class_names))
     model = model.to(device)
 
     criterion = nn.CrossEntropyLoss()
 
     optimizer = optim.Adam(model.parameters(), lr = LEARNING_RATE, weight_decay=1e-4)
-
+    #Scheduler dla autorskiego modelu CNN
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', dactor=0.5, patience=3, verbose=True)
     best_acc = 0.0
     best_model_wts = copy.deepcopy(model.state_dict())
 
@@ -76,6 +77,8 @@ def train():
             val_acc = val_corrects.double() / len(test_loader.dataset)
             print(f"Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.4f}")
 
+            # scheduler
+            scheduler.step(val_loss)
             if val_acc > best_acc:
                 best_acc = val_acc
                 best_model_wts = copy.deepcopy(model.state_dict())
@@ -86,7 +89,7 @@ def train():
 
         model.load_state_dict(best_model_wts)
 
-        save_path = os.path.join("xai_api", "best_brain_tumor_model.pth")
+        save_path = os.path.join("xai_api", "best_brain_tumor_model_customCNN.pth")
         torch.save(model.state_dict(), save_path)
         print(f"Najlepszy model zapisany w: {save_path}")
 if __name__ == "__main__":
