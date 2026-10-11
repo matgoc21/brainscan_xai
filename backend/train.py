@@ -24,7 +24,7 @@ def train():
 
     optimizer = optim.Adam(model.parameters(), lr = LEARNING_RATE, weight_decay=1e-4)
     #Scheduler dla autorskiego modelu CNN
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', dactor=0.5, patience=3, verbose=True)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', factor=0.5, patience=3)
     best_acc = 0.0
     best_model_wts = copy.deepcopy(model.state_dict())
 

@@ -33,7 +33,7 @@ class CustomCNN(nn.Module):
 
         #Wejście: 3 kanały, obraz 224x224
         
-        self.conv1 = nn.Conv2d(in_channel=3, out_channel=32, kernel_size=3, padding=1)
+        self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=1)
         self.bn1 = nn.BatchNorm2d(32)
         self.pool1 = nn.MaxPool2d(kernel_size=2, stride = 2)
 
