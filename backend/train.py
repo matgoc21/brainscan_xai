@@ -5,10 +5,10 @@ import copy
 import os
 
 from xai_api.dataset_loader import get_dataloaders
-from xai_api.model import BrainTumorResNet, CustomCNN
+from xai_api.model import BrainTumorResNet, CustomCNN, ResidualCustomCNN
 
 def train():
-    EPOCHS = 30
+    EPOCHS = 50
     BATCH_SIZE = 32
     LEARNING_RATE = 0.001
 
@@ -17,14 +17,15 @@ def train():
 
     train_loader, test_loader, class_names = get_dataloaders(batch_size=BATCH_SIZE)
     # Zmiana -> inny model
-    model = CustomCNN(num_classes=len(class_names))
+    model = ResidualCustomCNN(num_classes=len(class_names))
     model = model.to(device)
 
     criterion = nn.CrossEntropyLoss()
-
-    optimizer = optim.Adam(model.parameters(), lr = LEARNING_RATE, weight_decay=1e-4)
+    #zmiana weight decay z 1e-4 na 1e-3
+    optimizer = optim.Adam(model.parameters(), lr = LEARNING_RATE, weight_decay=1e-3)
     #Scheduler dla autorskiego modelu CNN
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', factor=0.5, patience=3)
+    #Zmiana patiance 3->5
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', factor=0.5, patience=5)
     best_acc = 0.0
     best_model_wts = copy.deepcopy(model.state_dict())
 
