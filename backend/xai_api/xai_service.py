@@ -8,10 +8,10 @@ from PIL import Image
 from torchvision import transforms
 from captum.attr import LayerGradCam, LayerAttribution
 
-from .model import BrainTumorResNet , CustomCNN
+from .model import BrainTumorResNet , CustomCNN, ResidualCustomCNN
 
 device = torch.device("cpu")
-model = CustomCNN(num_classes=4) #zmienic na CustomCNN, po wytrenowaniu
+model = ResidualCustomCNN(num_classes=4) #zmienic na CustomCNN, po wytrenowaniu
 
 model.load_state_dict(torch.load('xai_api/best_brain_tumor_model_customCNN.pth', map_location=device))
 model.eval()
