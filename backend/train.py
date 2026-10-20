@@ -1,97 +1,108 @@
+import copy
+from pathlib import Path
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import copy 
-import os
 
 from xai_api.dataset_loader import get_dataloaders
-from xai_api.model import BrainTumorResNet, CustomCNN, ResidualCustomCNN
+from xai_api.model import ResidualCustomCNN
+
 
 def train():
-    EPOCHS = 50
-    BATCH_SIZE = 32
-    LEARNING_RATE = 0.001
+    epochs = 50
+    batch_size = 32
+    learning_rate = 0.001
+    seed = 42
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
-    print(f"Używane urządzenie: {device}. Początek treningu...")
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
-    train_loader, test_loader, class_names = get_dataloaders(batch_size=BATCH_SIZE)
-    # Zmiana -> inny model
-    model = ResidualCustomCNN(num_classes=len(class_names))
-    model = model.to(device)
+    device = torch.device(
+        "cuda"
+        if torch.cuda.is_available()
+        else "mps"
+        if torch.backends.mps.is_available()
+        else "cpu"
+    )
+    print(f"Using device: {device}. Starting training...")
+
+    train_loader, validation_loader, class_names = get_dataloaders(
+        batch_size=batch_size,
+        seed=seed,
+    )
+    model = ResidualCustomCNN(num_classes=len(class_names)).to(device)
 
     criterion = nn.CrossEntropyLoss()
-    #zmiana weight decay z 1e-4 na 1e-3
-    optimizer = optim.Adam(model.parameters(), lr = LEARNING_RATE, weight_decay=1e-3)
-    #Scheduler dla autorskiego modelu CNN
-    #Zmiana patiance 3->5
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', factor=0.5, patience=5)
-    best_acc = 0.0
-    best_model_wts = copy.deepcopy(model.state_dict())
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-3)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, mode="min", factor=0.5, patience=5
+    )
+    best_validation_accuracy = -1.0
+    best_model_weights = copy.deepcopy(model.state_dict())
 
-    #Główna pętla epok
-    for epoch in range(EPOCHS):
-        print(f"\nEpoka {epoch+1}/{EPOCHS}")
-        print("="*15)
+    for epoch in range(epochs):
+        print(f"\nEpoch {epoch + 1}/{epochs}")
 
         model.train()
-        running_loss = 0.0
-        running_corrects = 0
-
+        train_loss_total = 0.0
+        train_correct_total = 0
         for inputs, labels in train_loader:
             inputs, labels = inputs.to(device), labels.to(device)
-
             optimizer.zero_grad()
-
             outputs = model(inputs)
             loss = criterion(outputs, labels)
-
-            _, preds = torch.max(outputs, 1)
-
             loss.backward()
             optimizer.step()
 
-            running_loss += loss.item() * inputs.size(0)
-            running_corrects += torch.sum(preds == labels.data)
+            train_loss_total += loss.item() * inputs.size(0)
+            train_correct_total += (outputs.argmax(dim=1) == labels).sum().item()
 
-        train_loss = running_loss / len(train_loader.dataset)
-        train_acc = running_corrects.double() / len(train_loader.dataset)
-
-        print(f"Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f}")
+        train_loss = train_loss_total / len(train_loader.dataset)
+        train_accuracy = train_correct_total / len(train_loader.dataset)
+        print(f"Train Loss: {train_loss:.4f} | Train Accuracy: {train_accuracy:.4f}")
 
         model.eval()
-        val_loss = 0.0
-        val_corrects = 0
-
-        with torch.no_grad():
-            for inputs, labels in test_loader:
+        validation_loss_total = 0.0
+        validation_correct_total = 0
+        with torch.inference_mode():
+            for inputs, labels in validation_loader:
                 inputs, labels = inputs.to(device), labels.to(device)
-
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
+                validation_loss_total += loss.item() * inputs.size(0)
+                validation_correct_total += (
+                    outputs.argmax(dim=1) == labels
+                ).sum().item()
 
-                _, preds = torch.max(outputs, 1)
+        validation_loss = validation_loss_total / len(validation_loader.dataset)
+        validation_accuracy = (
+            validation_correct_total / len(validation_loader.dataset)
+        )
+        print(
+            f"Validation Loss: {validation_loss:.4f} | "
+            f"Validation Accuracy: {validation_accuracy:.4f}"
+        )
 
-                val_loss += loss.item() * inputs.size(0)
-                val_corrects += torch.sum(preds == labels.data)
-            val_loss = val_loss / len(test_loader.dataset)
-            val_acc = val_corrects.double() / len(test_loader.dataset)
-            print(f"Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.4f}")
+        # The scheduler and checkpoint selection use validation data, never Testing.
+        scheduler.step(validation_loss)
+        if validation_accuracy > best_validation_accuracy:
+            best_validation_accuracy = validation_accuracy
+            best_model_weights = copy.deepcopy(model.state_dict())
+            print("New best validation checkpoint selected.")
 
-            # scheduler
-            scheduler.step(val_loss)
-            if val_acc > best_acc:
-                best_acc = val_acc
-                best_model_wts = copy.deepcopy(model.state_dict())
-                print(f"Nowy najlepszy model, nowe wagi modelu zapisane")
+    # Restore and save only the best validation checkpoint after all epochs finish.
+    model.load_state_dict(best_model_weights)
+    checkpoint_path = (
+        Path(__file__).resolve().parent
+        / "xai_api"
+        / "best_brain_tumor_model_customCNN.pth"
+    )
+    torch.save(model.state_dict(), checkpoint_path)
+    print(f"Best validation accuracy: {best_validation_accuracy:.4f}")
+    print(f"Best model saved to: {checkpoint_path}")
 
-        print("\nTrening zakończony.")
-        print(f"Najlepsza dokładność walidacji (Best Val Acc): {best_acc:.4f}")
 
-        model.load_state_dict(best_model_wts)
-
-        save_path = os.path.join("xai_api", "best_brain_tumor_model_customCNN.pth")
-        torch.save(model.state_dict(), save_path)
-        print(f"Najlepszy model zapisany w: {save_path}")
 if __name__ == "__main__":
     train()
