@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator, ScrollView, Alert } from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator, ScrollView, Alert, Platform } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 
-const BACKEND_URL = 'http://192.168.0.108:8000/api/analyze/';
+const BACKEND_URL = 'http://10.167.130.182:8000/api/analyze/';
 
 export default function App() {
   const [imageUri, setImageUri] = useState<string | null>(null);
@@ -36,21 +36,27 @@ export default function App() {
     setLoading(true);
     setResult(null);
 
-    // W React Native pliki wysyłamy określając uri, type oraz name
     const formData = new FormData();
-    formData.append('image', {
-      uri: imageUri,
-      name: 'mri_scan.jpg',
-      type: 'image/jpeg',
-    } as any);
 
     try {
+      if (Platform.OS === 'web') {
+        const imageResponse = await fetch(imageUri);
+        if (!imageResponse.ok) {
+          throw new Error(`Could not read the selected image (${imageResponse.status}).`);
+        }
+        const imageBlob = await imageResponse.blob();
+        formData.append('image', imageBlob, 'mri_scan.jpg');
+      } else {
+        formData.append('image', {
+          uri: imageUri,
+          name: 'mri_scan.jpg',
+          type: 'image/jpeg',
+        } as any);
+      }
+
       const response = await fetch(BACKEND_URL, {
         method: 'POST',
         body: formData,
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
       });
 
       const jsonResponse = await response.json();
