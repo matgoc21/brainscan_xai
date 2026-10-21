@@ -3,33 +3,33 @@
   "testing_folder": "/app/dataset/archive/Testing",
   "device": "cpu",
   "image_count": 1994,
-  "accuracy_percent": 94.68,
-  "macro_precision_percent": 94.78,
-  "macro_recall_percent": 94.75,
-  "macro_f1_percent": 94.75,
+  "accuracy_percent": 90.72,
+  "macro_precision_percent": 91.97,
+  "macro_recall_percent": 90.77,
+  "macro_f1_percent": 90.48,
   "classes": {
     "glioma": {
-      "precision_percent": 92.36,
-      "recall_percent": 89.4,
-      "f1_percent": 90.85,
+      "precision_percent": 99.71,
+      "recall_percent": 69.8,
+      "f1_percent": 82.12,
       "support": 500
     },
     "meningioma": {
-      "precision_percent": 89.22,
-      "recall_percent": 91.65,
-      "f1_percent": 90.42,
+      "precision_percent": 87.17,
+      "recall_percent": 94.95,
+      "f1_percent": 90.89,
       "support": 515
     },
     "notumor": {
-      "precision_percent": 99.21,
-      "recall_percent": 99.21,
-      "f1_percent": 99.21,
+      "precision_percent": 83.33,
+      "recall_percent": 100.0,
+      "f1_percent": 90.91,
       "support": 505
     },
     "pituitary": {
-      "precision_percent": 98.32,
-      "recall_percent": 98.73,
-      "f1_percent": 98.53,
+      "precision_percent": 97.69,
+      "recall_percent": 98.31,
+      "f1_percent": 98.0,
       "support": 474
     }
   },
@@ -42,28 +42,28 @@
     ],
     "rows_actual_columns_predicted": [
       [
-        447,
-        49,
-        4,
+        349,
+        65,
+        85,
+        1
+      ],
+      [
+        1,
+        489,
+        15,
+        10
+      ],
+      [
+        0,
+        0,
+        505,
         0
       ],
       [
-        35,
-        472,
         0,
-        8
-      ],
-      [
-        0,
-        4,
-        501,
-        0
-      ],
-      [
-        2,
-        4,
-        0,
-        468
+        7,
+        1,
+        466
       ]
     ]
   }
