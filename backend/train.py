@@ -21,7 +21,7 @@ DEFAULT_CHECKPOINT = (
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Train ResidualCustomCNN using a train/validation split."
+        description="Trening ResidualCustomCNN używajac podziału train/validation."
     )
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch-size", type=int, default=32)
@@ -30,20 +30,20 @@ def parse_args():
         "--glioma-loss-weight",
         type=float,
         default=1.0,
-        help="Multiplier for glioma examples in weighted cross-entropy.",
+        help="Mnożnik dla przykładów gliomy.",
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
         "--checkpoint-path",
         type=Path,
         default=DEFAULT_CHECKPOINT,
-        help="Where to save the best validation checkpoint.",
+        help="Śceiżka do zapisu.",
     )
     parser.add_argument(
         "--validation-output",
         type=Path,
         default=BACKEND_DIR / "validation_results",
-        help="Output prefix for validation CSV and JSON reports.",
+        help="Prefix wyjściowy dla raportów walidacji.",
     )
     return parser.parse_args()
 
@@ -132,9 +132,9 @@ def evaluate(model, loader, criterion, device, class_names, write_predictions=Fa
 def train():
     args = parse_args()
     if args.epochs < 1 or args.batch_size < 1 or args.learning_rate <= 0:
-        raise SystemExit("Epochs, batch size, and learning rate must be positive.")
+        raise SystemExit("Epoki, batch size i learning rate muszą być dodatnie.")
     if args.glioma_loss_weight <= 0:
-        raise SystemExit("--glioma-loss-weight must be positive.")
+        raise SystemExit("--mnożnik dla gliomy musi być dodatni.")
 
     torch.manual_seed(args.seed)
     if torch.cuda.is_available():
@@ -147,7 +147,7 @@ def train():
         if torch.backends.mps.is_available()
         else "cpu"
     )
-    print(f"Using device: {device}. Starting training...")
+    print(f"Wykorzystuje urządzenie: {device}. Początek treningu...")
 
     train_loader, validation_loader, class_names = get_dataloaders(
         batch_size=args.batch_size,
@@ -156,18 +156,17 @@ def train():
     expected_classes = ["glioma", "meningioma", "notumor", "pituitary"]
     if class_names != expected_classes:
         raise ValueError(
-            f"Expected class order {expected_classes}, found {class_names}."
+            f"Oczekiwana kolejność klas: {expected_classes}, znaleziono {class_names}."
         )
     model = ResidualCustomCNN(num_classes=len(class_names)).to(device)
 
     class_weights = torch.ones(len(class_names), device=device)
     if "glioma" not in class_names:
-        raise ValueError(f"Expected glioma class; found {class_names}.")
+        raise ValueError(f"Oczekiwano klasy glioma; znaleziono {class_names}.")
     class_weights[class_names.index("glioma")] = args.glioma_loss_weight
 
-    # Weighted loss increases the penalty for misclassifying glioma training examples.
     train_criterion = nn.CrossEntropyLoss(weight=class_weights)
-    # Keep validation loss unweighted so it remains comparable across weight experiments.
+    
     validation_criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(
         model.parameters(), lr=args.learning_rate, weight_decay=1e-3
@@ -213,15 +212,15 @@ def train():
             f"glioma recall: {glioma_recall:.2f}%"
         )
 
-        # Macro-F1 is primary; glioma recall breaks ties between equally balanced epochs.
+        
         score = (validation["macro_f1_percent"], glioma_recall)
         scheduler.step(validation["loss"])
         if score > best_score:
             best_score = score
             best_model_weights = copy.deepcopy(model.state_dict())
-            print("New best validation checkpoint selected.")
+            print("Nowy najlepszy validation checkpoint wybrany.")
 
-    # Save and inspect the best validation checkpoint, not the final epoch's weights.
+    
     model.load_state_dict(best_model_weights)
     args.checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(model.state_dict(), args.checkpoint_path)

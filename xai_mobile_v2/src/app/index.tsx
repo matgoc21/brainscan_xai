@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator, ScrollView, Alert, Platform } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 
-const BACKEND_URL = 'http://10.167.130.182:8000/api/analyze/';
+const BACKEND_URL = 'http://0.0.0.0:8000/api/analyze/';
 
 export default function App() {
   const [imageUri, setImageUri] = useState<string | null>(null);

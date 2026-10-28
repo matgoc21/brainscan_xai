@@ -75,20 +75,20 @@ def main():
     args = parse_args()
     args.data_dir = args.data_dir.resolve()
     if args.batch_size < 1:
-        raise SystemExit("--batch-size must be at least 1.")
+        raise SystemExit("--batch-size musi wynosic przynajmniej 1.")
     if not args.data_dir.is_dir():
-        raise SystemExit(f"Testing folder does not exist: {args.data_dir}")
+        raise SystemExit(f"Folder testujący nie istnieje: {args.data_dir}")
     if not args.weights.is_file():
-        raise SystemExit(f"Model checkpoint does not exist: {args.weights}")
+        raise SystemExit(f"Checkpoint modelu nie istnieje: {args.weights}")
 
     dataset = datasets.ImageFolder(args.data_dir, transform=PREPROCESS)
     if dataset.classes != CLASS_NAMES:
         raise SystemExit(
-            "Testing classes do not match the model's expected label order. "
+            "Klasy testujące są niezgodne. "
             f"Expected {CLASS_NAMES}; found {dataset.classes}."
         )
     if not dataset:
-        raise SystemExit(f"No images found in testing folder: {args.data_dir}")
+        raise SystemExit(f"Nie znaleziono obrazow w folderze testującym: {args.data_dir}")
 
     device = choose_device()
     model = ResidualCustomCNN(num_classes=len(CLASS_NAMES)).to(device)
