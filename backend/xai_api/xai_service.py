@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from torchvision import transforms
 from captum.attr import LayerGradCam, LayerAttribution
+from django.core.files.base import ContentFile
 
 from .model import BrainTumorResNet , CustomCNN, ResidualCustomCNN
 
@@ -64,10 +65,13 @@ def generate_gradcam_and_predict(image_file):
     plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0)
     plt.close(fig)
     buf.seek(0)
-    base64_img = base64.b64encode(buf.read()).decode('utf-8')
+    # base64_img = base64.b64encode(buf.read()).decode('utf-8')
+    # check if this works good, change to saving after a button click, not after prediction
+    heatmap_file = ContentFile(buf.read(), name = f"heatmap_{predicted_class}.png")
 
     return {
         "prediction": predicted_class,
         "confidence": round(confidence.item() * 100, 2),
-        "heatmap_base64": f"data:image/png;base64,{base64_img}",
+        #"heatmap_base64": f"data:image/png;base64,{base64_img}",
+        "heatmap_file": heatmap_file,
     }

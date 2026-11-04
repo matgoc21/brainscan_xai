@@ -30,7 +30,7 @@ export default function App() {
     }
   };
 
-  // Funkcja wysyłająca zdjęcie do naszego Django API
+  // Funkcja wysyłająca zdjęcie do Django API
   const analyzeImage = async () => {
     if (!imageUri) return;
     setLoading(true);
@@ -99,7 +99,7 @@ export default function App() {
         <Text style={styles.buttonText}>Analizuj skan (Grad-CAM)</Text>
       </TouchableOpacity>
 
-      {/* Ekran ładowania */}
+      
       {loading && (
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="#3498db" />
@@ -107,7 +107,7 @@ export default function App() {
         </View>
       )}
 
-      {/* Sekcja wyników */}
+      
       {result && (
         <View style={styles.resultContainer}>
           <Text style={styles.resultTitle}>Wynik klasyfikacji:</Text>
@@ -122,7 +122,7 @@ export default function App() {
   );
 }
 
-// Podstawowe style aplikacji
+
 const styles = StyleSheet.create({
   container: { flexGrow: 1, backgroundColor: '#f4f7f6', alignItems: 'center', padding: 20, paddingTop: 60 },
   title: { fontSize: 24, fontWeight: 'bold', color: '#2c3e50', marginBottom: 20 },
