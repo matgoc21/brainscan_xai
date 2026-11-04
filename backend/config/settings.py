@@ -93,7 +93,7 @@ DATABASES = {
         'NAME': 'brainscan_db',
         'USER': 'postgres_user',
         'PASSWORD': 'secretpassword',
-        'HOST': 'db', # nazwa kontenera w docker-compose
+        'HOST': 'xai_db', 
         'PORT': '5432',
     }
 }

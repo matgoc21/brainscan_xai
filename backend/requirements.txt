@@ -11,3 +11,4 @@ matplotlib
 
 Pillow
 numpy
+psycopg2-binary

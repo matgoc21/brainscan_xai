@@ -12,3 +12,15 @@ services:
       - "8000:8000"
     environment:
       - DEBUG=1
+  
+  db:
+    image: postgres:15
+    container_name: xai_db
+    environment:
+      POSTGRES_DB: brainscan_db
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: secretpassword
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
