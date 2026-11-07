@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics, permissions
 from django.shortcuts import render
-from rest_framework.parsers import FormParser #, MultiParser
+from rest_framework.parsers import FormParser , MultiPartParser
 from .serializers import MRIUploadSerializer, ScanAnalysisSerializer
 from .xai_service import generate_gradcam_and_predict
 from .models import ScanAnalysis
@@ -74,7 +74,7 @@ class ScanListCreateView(generics.ListCreateAPIView):
         serializer = self.get_serializer(scan)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-class ScanDetailView(generics.RetrieveAPIView):
+class ScanDetailView(generics.RetrieveDestroyAPIView):
     """
     GET /api/scans/<id>/ - zwraca szczegóły pojedynczego badania
     DELETE /api/scans/<id>/ - usuwa badanie z bazy danych

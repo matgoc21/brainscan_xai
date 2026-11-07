@@ -8,7 +8,7 @@ export interface ScanItem {
     original_image: string;
     heatmap_image: string;
     predicted_class: string;
-    confidence: number;
+    confidence_percent: number;
     created_at: string;
 }
 
@@ -83,7 +83,7 @@ export default function ScanDetailModal({scan, onClose, onDeleted}: ScanDetailMo
                     </View>
                     <View style={styles.confidenceBadge}>
                     <Text style={styles.confLabel}>Pewność</Text>
-                    <Text style={styles.confValue}>{scan.confidence}%</Text>
+                    <Text style={styles.confValue}>{scan.confidence_percent}%</Text>
                     </View>
                 </View>
 

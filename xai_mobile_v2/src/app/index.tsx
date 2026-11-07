@@ -1,147 +1,4 @@
-// import { useState } from 'react';
-// import {StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator, ScrollView, Alert, Platform } from 'react-native';
-// import * as ImagePicker from 'expo-image-picker';
-
-// const BACKEND_URL = 'http://0.0.0.0:8000/api/analyze/';
-
-// export default function App() {
-//   const [imageUri, setImageUri] = useState<string | null>(null);
-//   const [loading, setLoading] = useState(false);
-//   const [result, setResult] = useState<any>(null);
-
-//   // Funkcja otwierająca galerię w telefonie
-//   const pickImage = async () => {
-//     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
-//     if (permissionResult.granted === false) {
-//       Alert.alert('Wymagane uprawnienia', 'Aplikacja potrzebuje dostępu do galerii, aby załadować skan MRI.');
-//       return;
-//     }
-
-//     let pickerResult = await ImagePicker.launchImageLibraryAsync({
-//       mediaTypes: ['images'],
-//       allowsEditing: true, // Pozwala przyciąć zdjęcie przed wysłaniem
-//       aspect: [1, 1],
-//       quality: 0.8,
-//     });
-
-//     if (!pickerResult.canceled) {
-//       setImageUri(pickerResult.assets[0].uri);
-//       setResult(null); // Resetujemy wynik przy wyborze nowego pliku
-//     }
-//   };
-
-//   // Funkcja wysyłająca zdjęcie do Django API
-//   const analyzeImage = async () => {
-//     if (!imageUri) return;
-//     setLoading(true);
-//     setResult(null);
-
-//     const formData = new FormData();
-
-//     try {
-//       if (Platform.OS === 'web') {
-//         const imageResponse = await fetch(imageUri);
-//         if (!imageResponse.ok) {
-//           throw new Error(`Could not read the selected image (${imageResponse.status}).`);
-//         }
-//         const imageBlob = await imageResponse.blob();
-//         formData.append('image', imageBlob, 'mri_scan.jpg');
-//       } else {
-//         formData.append('image', {
-//           uri: imageUri,
-//           name: 'mri_scan.jpg',
-//           type: 'image/jpeg',
-//         } as any);
-//       }
-
-//       const response = await fetch(BACKEND_URL, {
-//         method: 'POST',
-//         body: formData,
-//       });
-
-//       const jsonResponse = await response.json();
-
-//       if (response.ok) {
-//         setResult(jsonResponse.data);
-//       } else {
-//         Alert.alert('Błąd API', JSON.stringify(jsonResponse));
-//       }
-//     } catch (error) {
-//       console.error(error);
-//       Alert.alert('Błąd połączenia', 'Nie można połączyć się z serwerem. Czy na pewno wpisałeś poprawne IP Fedory i Docker działa?');
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   return (
-//     <ScrollView contentContainerStyle={styles.container}>
-//       <Text style={styles.title}>Diagnostyka XAI</Text>
-      
-//       {/* Sekcja wyboru zdjęcia */}
-//       <View style={styles.imageContainer}>
-//         {imageUri ? (
-//           <Image source={{ uri: imageUri }} style={styles.image} />
-//         ) : (
-//           <Text style={styles.placeholderText}>Brak załadowanego skanu MRI</Text>
-//         )}
-//       </View>
-
-//       <TouchableOpacity style={styles.button} onPress={pickImage}>
-//         <Text style={styles.buttonText}>Wybierz zdjęcie z galerii</Text>
-//       </TouchableOpacity>
-
-//       <TouchableOpacity 
-//         style={[styles.button, styles.analyzeButton, !imageUri && styles.buttonDisabled]} 
-//         onPress={analyzeImage}
-//         disabled={!imageUri || loading}
-//       >
-//         <Text style={styles.buttonText}>Analizuj skan (Grad-CAM)</Text>
-//       </TouchableOpacity>
-
-      
-//       {loading && (
-//         <View style={styles.loadingContainer}>
-//           <ActivityIndicator size="large" color="#3498db" />
-//           <Text style={styles.loadingText}>Przetwarzanie przez sieć CNN...</Text>
-//         </View>
-//       )}
-
-      
-//       {result && (
-//         <View style={styles.resultContainer}>
-//           <Text style={styles.resultTitle}>Wynik klasyfikacji:</Text>
-//           <Text style={styles.resultText}>Klasa: <Text style={styles.highlight}>{result.prediction.toUpperCase()}</Text></Text>
-//           <Text style={styles.resultText}>Pewność: <Text style={styles.highlight}>{result.confidence}%</Text></Text>
-          
-//           <Text style={styles.resultTitle}>Wyjaśnienie modelu (Grad-CAM):</Text>
-//           <Image source={{ uri: result.heatmap_base64 }} style={styles.heatmapImage} />
-//         </View>
-//       )}
-//     </ScrollView>
-//   );
-// }
-
-
-// const styles = StyleSheet.create({
-//   container: { flexGrow: 1, backgroundColor: '#f4f7f6', alignItems: 'center', padding: 20, paddingTop: 60 },
-//   title: { fontSize: 24, fontWeight: 'bold', color: '#2c3e50', marginBottom: 20 },
-//   imageContainer: { width: 250, height: 250, backgroundColor: '#e1e8ed', justifyContent: 'center', alignItems: 'center', borderRadius: 10, marginBottom: 20, overflow: 'hidden' },
-//   image: { width: '100%', height: '100%' },
-//   placeholderText: { color: '#7f8c8d', textAlign: 'center', padding: 20 },
-//   button: { backgroundColor: '#34495e', padding: 15, borderRadius: 8, width: '100%', alignItems: 'center', marginBottom: 10 },
-//   analyzeButton: { backgroundColor: '#27ae60' },
-//   buttonDisabled: { backgroundColor: '#95a5a6' },
-//   buttonText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
-//   loadingContainer: { marginTop: 20, alignItems: 'center' },
-//   loadingText: { marginTop: 10, color: '#3498db', fontSize: 16 },
-//   resultContainer: { width: '100%', marginTop: 20, backgroundColor: '#fff', padding: 15, borderRadius: 10, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4, elevation: 3 },
-//   resultTitle: { fontSize: 18, fontWeight: 'bold', color: '#2c3e50', marginTop: 10, marginBottom: 5 },
-//   resultText: { fontSize: 16, color: '#34495e', marginBottom: 5 },
-//   highlight: { color: '#e74c3c', fontWeight: 'bold' },
-//   heatmapImage: { width: 250, height: 250, alignSelf: 'center', marginTop: 15, borderRadius: 8 },
-// });
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   StyleSheet,
   Text,
@@ -150,27 +7,82 @@ import {
   ActivityIndicator,
   Platform,
   Alert,
+  FlatList,
+  Image,
+  TextInput,
 } from 'react-native';
 import { getAccessToken, clearTokens } from '@/services/storage';
+import { apiFetch, BASE_URL } from '@/services/api';
 import LoginScreen from '@/components/LoginScreen';
 import WebUploadModal from '@/components/WebUploadModal';
+import ScanDetailModal, {ScanItem} from '@/components/ScanDetailModal';
+
+const FILTERS = [
+  {key: '', label: 'Wszystkie'},
+  {key: 'glioma', label: 'Glejak'},
+  {key: 'meningioma', label: 'Oponiak'},
+  {key: 'pituitary', label: 'Guz przysadki'},
+  {key: 'notumor', label: 'Brak guza'},
+];
 
 export default function HomeScreen() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [showUploadModal, setShowUploadModal] = useState(false);
+  const [scans, setScans] = useState<ScanItem[]>([]);
+  const [loadingScans, setLoadingScans] = useState(false);
+  const [selectedFilter, setSelectedFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedScan, setSelectedScan] = useState<ScanItem | null>(null);
 
-  const checkAuth = async () => {
+  const fetchScans = useCallback(async () => {
+    setLoadingScans(true);
+    try {
+      const params = new URLSearchParams();
+      if (selectedFilter) params.append('class', selectedFilter);
+      if (searchQuery.trim()) params.append('search', searchQuery.trim());
+
+      const queryString = params.toString() ? `?${params.toString()}` : '';
+      const response = await apiFetch(`/api/scans/${queryString}`);
+
+      if (response.ok) {
+        const data = await response.json();
+        setScans(data);
+      } else if (response.status === 401) {
+        setIsAuthenticated(false);
+      }
+    } catch (error) {
+      console.error('Błąd pobierania listy badań: ', error);
+    } finally {
+      setLoadingScans(false);
+    }
+  }, [selectedFilter, searchQuery]);
+
+
+  useEffect(() => {
+    const checkAuth = async () => {
     const token = await getAccessToken();
     setIsAuthenticated(!!token);
   };
+  checkAuth();
+  }, [])
 
   useEffect(() => {
-    checkAuth();
-  }, []);
+    if (isAuthenticated) {
+      fetchScans();
+    }
+  }, [isAuthenticated, fetchScans]);
+  
 
   const handleLogout = async () => {
     await clearTokens();
     setIsAuthenticated(false);
+    setScans([]);
+  };
+
+  const getImageUrl = (url: string | null) => {
+    if  (!url) return '';
+    if (url.startsWith('http')) return url;
+    return `${BASE_URL}${url}`;
   };
 
   if (isAuthenticated === null) {
@@ -187,6 +99,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Pasek górny */}
       <View style={styles.topBar}>
         <Text style={styles.heading}>Panel Badań MRI</Text>
         <View style={styles.topBarButtons}>
@@ -198,27 +111,107 @@ export default function HomeScreen() {
               <Text style={styles.btnText}>+ Dodaj badanie (Web)</Text>
             </TouchableOpacity>
           )}
+          <TouchableOpacity style={styles.refreshBtn} onPress={fetchScans}>
+            <Text style={styles.btnText}>Odśwież</Text>
+          </TouchableOpacity>
           <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout}>
             <Text style={styles.btnText}>Wyloguj</Text>
           </TouchableOpacity>
         </View>
       </View>
 
-      <View style={styles.placeholderBox}>
-        <Text style={styles.infoText}>
-          Jesteś zalogowany. Gotowy do podpięcia listy badań i map Grad-CAM.
-        </Text>
+      {/* Wyszukiwarka i filtry klas */}
+      <View style={styles.controlsContainer}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Szukaj po ID pacjenta..."
+          placeholderTextColor="#7f8c8d"
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+        />
+
+        <View style={styles.filterRow}>
+          {FILTERS.map((f) => (
+            <TouchableOpacity
+              key={f.key}
+              style={[
+                styles.filterChip,
+                selectedFilter === f.key && styles.filterChipActive,
+              ]}
+              onPress={() => setSelectedFilter(f.key)}
+            >
+              <Text
+                style={[
+                  styles.filterChipText,
+                  selectedFilter === f.key && styles.filterChipTextActive,
+                ]}
+              >
+                {f.label}
+              </Text>
+            </TouchableOpacity>
+          ))}
+        </View>
       </View>
 
+      {/* Lista badań */}
+      {loadingScans ? (
+        <View style={styles.centerContainer}>
+          <ActivityIndicator size="large" color="#2980b9" />
+        </View>
+      ) : scans.length === 0 ? (
+        <View style={styles.centerContainer}>
+          <Text style={styles.infoText}>
+            Brak zapisanych badań spełniających kryteria.
+          </Text>
+        </View>
+      ) : (
+        <FlatList
+          data={scans}
+          keyExtractor={(item) => item.id.toString()}
+          contentContainerStyle={styles.listContent}
+          renderItem={({ item }) => (
+            <TouchableOpacity
+              style={styles.scanCard}
+              onPress={() => setSelectedScan(item)}
+            >
+              <Image
+                source={{ uri: getImageUrl(item.heatmap_image || item.original_image) }}
+                style={styles.thumbnail}
+              />
+              <View style={styles.cardInfo}>
+                <Text style={styles.patientId}>{item.patient_id}</Text>
+                <Text style={styles.predictionText}>
+                  Klasa: <Text style={styles.bold}>{item.predicted_class.toUpperCase()}</Text> ({item.confidence_percent}%)
+                </Text>
+                <Text style={styles.dateSmall}>
+                  {new Date(item.created_at).toLocaleString('pl-PL')}
+                </Text>
+              </View>
+              <Text style={styles.chevron}>›</Text>
+            </TouchableOpacity>
+          )}
+        />
+      )}
+
+      {/* Modal dodawania badania (Web) */}
       {showUploadModal && (
         <WebUploadModal
           onClose={() => setShowUploadModal(false)}
           onSuccess={() => {
             setShowUploadModal(false);
-            Alert.alert(
-              'Sukces',
-              'Skan został przeanalizowany i zapisany w bazie danych.'
-            );
+            fetchScans(); // Automatyczne odświeżenie listy po analizie!
+          }}
+        />
+      )}
+
+      {/* Modal szczegółów badania i XAI */}
+      {selectedScan && (
+        <ScanDetailModal
+          scan={selectedScan}
+          onClose={() => setSelectedScan(null)}
+          onDeleted={(deletedId) => {
+            setSelectedScan(null);
+            setScans((prev) => prev.filter((s) => s.id !== deletedId));
           }}
         />
       )}
@@ -226,6 +219,46 @@ export default function HomeScreen() {
   );
 }
 
+//   return (
+//     <View style={styles.container}>
+//       <View style={styles.topBar}>
+//         <Text style={styles.heading}>Panel Badań MRI</Text>
+//         <View style={styles.topBarButtons}>
+//           {Platform.OS === 'web' && (
+//             <TouchableOpacity
+//               style={styles.addBtn}
+//               onPress={() => setShowUploadModal(true)}
+//             >
+//               <Text style={styles.btnText}>+ Dodaj badanie (Web)</Text>
+//             </TouchableOpacity>
+//           )}
+//           <TouchableOpacity style={styles.logoutBtn} onPress={handleLogout}>
+//             <Text style={styles.btnText}>Wyloguj</Text>
+//           </TouchableOpacity>
+//         </View>
+//       </View>
+
+//       <View style={styles.placeholderBox}>
+//         <Text style={styles.infoText}>
+//           Jesteś zalogowany. Gotowy do podpięcia listy badań i map Grad-CAM.
+//         </Text>
+//       </View>
+
+//       {showUploadModal && (
+//         <WebUploadModal
+//           onClose={() => setShowUploadModal(false)}
+//           onSuccess={() => {
+//             setShowUploadModal(false);
+//             Alert.alert(
+//               'Sukces',
+//               'Skan został przeanalizowany i zapisany w bazie danych.'
+//             );
+//           }}
+//         />
+//       )}
+//     </View>
+//   );
+// }
 const styles = StyleSheet.create({
   centerContainer: {
     flex: 1,
@@ -237,13 +270,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f4f7f6',
     padding: 20,
-    paddingTop: 50,
+    paddingTop: 40,
   },
   topBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 16,
+    flexWrap: 'wrap',
+    gap: 10,
   },
   heading: {
     fontSize: 22,
@@ -252,10 +287,16 @@ const styles = StyleSheet.create({
   },
   topBarButtons: {
     flexDirection: 'row',
-    gap: 10,
+    gap: 8,
   },
   addBtn: {
     backgroundColor: '#27ae60',
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 6,
+  },
+  refreshBtn: {
+    backgroundColor: '#2980b9',
     paddingVertical: 8,
     paddingHorizontal: 12,
     borderRadius: 6,
@@ -271,10 +312,91 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 13,
   },
-  placeholderBox: {
-    flex: 1,
-    justifyContent: 'center',
+  controlsContainer: {
+    marginBottom: 14,
+  },
+  searchInput: {
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#dcdde1',
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 9,
+    fontSize: 14,
+    marginBottom: 10,
+    color: '#2c3e50',
+  },
+  filterRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  filterChip: {
+    backgroundColor: '#e1e8ed',
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 16,
+  },
+  filterChipActive: {
+    backgroundColor: '#2c3e50',
+  },
+  filterChipText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#2c3e50',
+  },
+  filterChipTextActive: {
+    color: '#fff',
+  },
+  listContent: {
+    paddingBottom: 30,
+  },
+  scanCard: {
+    flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: '#fff',
+    padding: 12,
+    borderRadius: 10,
+    marginBottom: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.08,
+    shadowRadius: 3,
+    elevation: 2,
+  },
+  thumbnail: {
+    width: 64,
+    height: 64,
+    borderRadius: 8,
+    backgroundColor: '#000',
+    marginRight: 14,
+  },
+  cardInfo: {
+    flex: 1,
+  },
+  patientId: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#2c3e50',
+    marginBottom: 3,
+  },
+  predictionText: {
+    fontSize: 13,
+    color: '#34495e',
+    marginBottom: 3,
+  },
+  bold: {
+    fontWeight: 'bold',
+    color: '#2980b9',
+  },
+  dateSmall: {
+    fontSize: 11,
+    color: '#95a5a6',
+  },
+  chevron: {
+    fontSize: 24,
+    color: '#bdc3c7',
+    paddingHorizontal: 8,
   },
   infoText: {
     color: '#7f8c8d',
@@ -282,3 +404,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
