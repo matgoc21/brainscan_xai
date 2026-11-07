@@ -10,7 +10,7 @@ class ScanAnalysis(models.Model):
     ]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='scans')
-    patient_id = models.charField(max_length=100, default='Anonimowy')
+    patient_id = models.CharField(max_length=100, default='Anonimowy')
     original_image = models.ImageField(upload_to='scans/original/')
     heatmap_image = models.ImageField(upload_to = 'scans/heatmaps/', null=True, blank='True')
     predicted_class = models.CharField(max_length=50, choices=CLASS_CHOICES)

@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics, permissions
 from django.shortcuts import render
-from rest_framework.parsers import MultiParser, FormParser
+from rest_framework.parsers import FormParser #, MultiParser
 from .serializers import MRIUploadSerializer, ScanAnalysisSerializer
 from .xai_service import generate_gradcam_and_predict
 from .models import ScanAnalysis
@@ -37,7 +37,7 @@ class ScanListCreateView(generics.ListCreateAPIView):
 
     serializer_class = ScanAnalysisSerializer
     permission_classes = [permissions.IsAuthenticated]
-    parser_classes = [MultiPartParser, FormParser]
+   # parser_classes = [MultiParser, FormParser]
 
     def get_queryset(self):
         user = self.request.user
@@ -54,7 +54,7 @@ class ScanListCreateView(generics.ListCreateAPIView):
         return queryset
 
     def create(self, request, *args, **kwargs):
-        image_file = rquest.FILES.get('image')
+        image_file = request.FILES.get('image')
         patinet_id = request.data.get('patient_identifier', 'Anonimowy')
 
         if not image_file:
@@ -81,7 +81,7 @@ class ScanDetailView(generics.RetrieveAPIView):
     """
 
     serializer_class = ScanAnalysisSerializer
-    permission_classes = [permissions.IsAuthnenticated]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         return ScanAnalysis.objects.filter(user=self.request.user)

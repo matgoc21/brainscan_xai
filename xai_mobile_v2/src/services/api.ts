@@ -4,7 +4,7 @@ import {getAccessToken, getRefreshToken, saveTokens, clearTokens} from './storag
 //Bazowy url, dla web i emulatorów: localhost/10.0.2.2, dla telefonu IP
 
 export const BASE_URL = Platform.select({
-    web: 'http://loclahost:8000',
+    web: 'http://localhost:8000',
     android: 'http://10.0.2.2:8000',
     default: 'http://localhost:8000',
 });

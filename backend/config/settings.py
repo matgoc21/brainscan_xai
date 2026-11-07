@@ -93,7 +93,7 @@ DATABASES = {
         'NAME': 'brainscan_db',
         'USER': 'postgres_user',
         'PASSWORD': 'secretpassword',
-        'HOST': 'xai_db', 
+        'HOST': 'db', 
         'PORT': '5432',
     }
 }
