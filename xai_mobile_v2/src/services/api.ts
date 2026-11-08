@@ -5,7 +5,7 @@ import {getAccessToken, getRefreshToken, saveTokens, clearTokens} from './storag
 
 export const BASE_URL = Platform.select({
     web: 'http://localhost:8000',
-    android: 'http://10.0.2.2:8000',
+    android: 'http://192.168.0.108:8000',
     default: 'http://localhost:8000',
 });
 
