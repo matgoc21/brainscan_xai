@@ -28,7 +28,7 @@ class ScanAnalysis(models.Model):
     heatmap_image = models.ImageField(upload_to = 'scans/heatmaps/', null=True, blank=True)
     predicted_class = models.CharField(max_length=50, choices=CLASS_CHOICES)
     confidence_percent = models.FloatField()
-    propabilities = models.JSONField(default=dict)
+    probabilities = models.JSONField(default=dict)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

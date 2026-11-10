@@ -20,7 +20,7 @@ class ScanAnalysisSerializer(serializers.ModelSerializer):
                 'heatmap_image', 
                 'predicted_class',
                 'confidence_percent',
-                'probabilities'
+                'probabilities',
                 'created_at',
                 ]
         read_only_fields = ['id','predicted_class', 'confidence_percent', 'prbabilities', 'created_at', 'heatmap_image']
