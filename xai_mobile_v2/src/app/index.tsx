@@ -179,7 +179,7 @@ export default function HomeScreen() {
                 style={styles.thumbnail}
               />
               <View style={styles.cardInfo}>
-                <Text style={styles.patientId}>{item.patient_id}</Text>
+                <Text style={styles.patientId}>{item.patient.identifier}</Text>
                 <Text style={styles.predictionText}>
                   Klasa: <Text style={styles.bold}>{item.predicted_class.toUpperCase()}</Text> ({item.confidence_percent}%)
                 </Text>

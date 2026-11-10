@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, ActivityIndicator, Alert, Platform} from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, ActivityIndicator, Alert, Platform, ScrollView} from 'react-native';
 import {apiFetch } from '@/services/api';
 
 interface WebUploadModalProps {
@@ -9,6 +9,11 @@ interface WebUploadModalProps {
 
 export default function WebUploadModal({ onSuccess, onClose }: WebUploadModalProps) {
     const [patientId, setPatientId] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [age, setAge] = useState('');
+    const [gender, setGender] = useState('');
+
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
     const [uploading, setUploading] = useState(false);
     const [statusMsg, setStatusMsg] = useState('');
@@ -24,12 +29,20 @@ export default function WebUploadModal({ onSuccess, onClose }: WebUploadModalPro
             setStatusMsg('Wybierz plik skanu MRI');
             return;
         }
+        if (!patientId.trim()) {
+            setStatusMsg('Podanie ID/ PESEL - u pacjenta jest wymagane');
+            return;
+        }
 
         setUploading(true);
         setStatusMsg('');
 
         const formData = new FormData();
-        formData.append('patient_id', patientId.trim() || 'Anonimowy');
+        formData.append('patient_identifier', patientId.trim());
+        formData.append('first_name', firstName.trim());
+        formData.append('last_name', lastName.trim());
+        if (age.trim()) formData.append('age', age.trim());
+        if (gender.trim()) formData.append('gender', gender.trim());
         formData.append('image', selectedFile);
 
         try {
@@ -66,6 +79,57 @@ export default function WebUploadModal({ onSuccess, onClose }: WebUploadModalPro
                     onChangeText={setPatientId}
                 />
 
+                <View style={styles.row}>
+                    <View style={styles.col}>
+                        <Text style={styles.label}>Imię (Opcjonalne):</Text>
+                        <TextInput 
+                            style={styles.input}
+                            placeholder='Jan'
+                            placeholderTextColor="#7f8c8d"
+                            value={firstName}
+                            onChangeText={setFirstName}
+                        />
+                    
+
+                    </View>
+                    <View style={styles.col}>
+                        <Text style={styles.label}>Nazwisko (Opcjonalne)</Text>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Kowalski"
+                            placeholderTextColor="#7f8c8d"
+                            value={lastName}
+                            onChangeText={setLastName}
+                        />
+                    </View>
+                </View>
+
+                <View style={styles.row}>
+                    <View style={styles.col}>
+                        <Text style={styles.label}>Płeć:</Text>
+                        <TextInput
+                            style={styles.input}
+                            placeholder= "M/K"
+                            placeholderTextColor="#7f8c8d"
+                            value={gender}
+                            onChangeText={setGender}
+                        />
+                    </View>
+                    <View style={styles.col}>
+
+                        <Text style={styles.label}>Wiek:</Text>
+                        <TextInput 
+                            style={styles.input}
+                            placeholder="Np. 45"
+                            placeholderTextColor={"#7f8c8d"}
+                            keyboardType="numeric"
+                            value={age}
+                            onChangeText={setAge}
+                        />
+                    </View>
+                </View>
+                
+
                 <Text style={styles.label}>Wybierz skan z dysku komputera:</Text>
                 {Platform.OS === 'web' && (
                     <View style={styles.filePickerContainer}>
@@ -86,7 +150,7 @@ export default function WebUploadModal({ onSuccess, onClose }: WebUploadModalPro
                 {statusMsg ? <Text style={styles.errorText}>{statusMsg}</Text>: null}
 
                 <View style={styles.buttonRow}>
-                    <TouchableOpacity style={[styles.btn, styles.cancelBtn]} onPress={handleUpload} disabled={uploading}>
+                    <TouchableOpacity style={[styles.btn, styles.cancelBtn]} onPress={onClose} disabled={uploading}>
                         <Text style={styles.btnText}>Anuluj</Text>
                     </TouchableOpacity>
 
@@ -173,5 +237,15 @@ const styles = StyleSheet.create({
   btnText: {
     color: '#fff',
     fontWeight: 'bold',
+  },
+  row: {
+    flexDirection: 'row',
+    gap: 10
+  },
+  col: {
+    flex: 1
+  },
+  scrollContent: {
+    paddingBottom: 10
   },
 });

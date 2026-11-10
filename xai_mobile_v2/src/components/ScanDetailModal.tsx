@@ -2,13 +2,23 @@ import React, {useState} from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity, ScrollView, Platform} from 'react-native';
 import { BASE_URL, apiFetch } from '@/services/api';
 
+export interface PatientData {
+  id: number;
+  identifier: string;
+  first_name: string;
+  last_name: string;
+  age: number | null;
+  gender: string;
+}
+
 export interface ScanItem {
     id: number;
-    patient_id: string;
+    patient: PatientData;
     original_image: string;
-    heatmap_image: string;
+    heatmap_image: string | null;
     predicted_class: string;
     confidence_percent: number;
+    probabilities: Record<string, number>;
     created_at: string;
 }
 
@@ -39,7 +49,7 @@ export default function ScanDetailModal({scan, onClose, onDeleted}: ScanDetailMo
 
     const handleDelete = async () => {
         const confirmDelete =
-        Platform.OS === 'web' ? window.confirm(`Czy na pewno chcesz usunąć badanie pacjenta ${scan.patient_id}?`) : true;
+        Platform.OS === 'web' ? window.confirm(`Czy na pewno chcesz usunąć badanie pacjenta ${scan.patient.identifier}?`) : true;
 
         if (!confirmDelete) return;
 
@@ -57,17 +67,24 @@ export default function ScanDetailModal({scan, onClose, onDeleted}: ScanDetailMo
             setDeleting(false);
         }
     };
-
+    const patientName = `${scan.patient.first_name} ${scan.patient.last_name}`.trim();
     return (
         <View style={styles.overlay}>
             <View style={styles.card}>
                 <ScrollView contentContainerStyle={styles.scrollContent}>
                 <View style={styles.headerRow}>
-                    <Text style={styles.title}>Pacjent: {scan.patient_id}</Text>
+                    <Text style={styles.title}>Pacjent: {scan.patient.identifier}</Text>
                     <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
                     <Text style={styles.closeBtnText}>✕ Zamknij</Text>
                     </TouchableOpacity>
                 </View>
+
+                <Text style={styles.subtitle}>
+                  {patientName ? `${patientName}` : ''}
+                  {scan.patient.age ? `(${scan.patient.age} lat) ` : ''}
+                  {scan.patient.gender}
+                  
+                </Text>
 
                 <Text style={styles.dateText}>
                     Data badania: {new Date(scan.created_at).toLocaleString('pl-PL')}
@@ -87,7 +104,37 @@ export default function ScanDetailModal({scan, onClose, onDeleted}: ScanDetailMo
                     </View>
                 </View>
 
-                {/* Obszar wizualizacji skanu i mapy ciepła */}
+                {/* Słupki prawdopodobieństw */}
+
+                {scan.probabilities && Object.keys(scan.probabilities).length > 0 && (
+                  <View style={styles.probsContainer}>
+                    <Text style = {styles.sectionLabel}>Rozkład prawdopodobieństw (4 klasy): </Text>
+                    {Object.keys(CLASS_LABELS).map((classKey) => {
+                      const probValue = scan.probabilities[classKey] || 0;
+                      const isWinner = classKey === scan.predicted_class;
+                      return (
+                        <View key={classKey} style={styles.probRow}>
+                          <Text style={[styles.probName, isWinner && styles.probNameWinner]}>
+                            {CLASS_LABELS[classKey]}
+                          </Text>
+                          <View style={styles.probBarBackground}>
+                            <View
+                              style={[
+                                styles.probBarFill,
+                                {width: `${probValue}%`, backgroundColor:  isWinner ? '#27ae60' : '#3498db' }
+                              ]}
+                            />
+                          </View>
+                          <Text style={[styles.probValueText, isWinner && styles.probValueTextWinner]}>
+                            {probValue}%
+                          </Text>
+                        </View>
+                      );
+                    })}
+                  </View>
+                )}
+
+                {/* Wizualizacja skanu i mapy ciepła */}
                 <View style={styles.imageWrapper}>
                     <Image
                     source={{ uri: getImageUrl(scan.original_image) }}
@@ -210,6 +257,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#2c3e50',
   },
+  subtitle: {
+    fontSize: 14, 
+    color: '#34495e',
+    marginBottom: 4,
+    fontStyle: 'italic' 
+  },
   closeBtn: {
     paddingVertical: 6,
     paddingHorizontal: 12,
@@ -258,6 +311,51 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: '#27ae60',
+  },
+
+  probsContainer: { 
+    marginBottom: 16,
+    padding: 12,
+    backgroundColor: '#fff', 
+    borderWidth: 1, 
+    borderColor: '#ecf0f1', 
+    borderRadius: 8 
+  },
+  probRow: { 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    marginBottom: 8 
+  },
+  probName: { 
+    width: 110, 
+    fontSize: 11, 
+    color: '#34495e' 
+  },
+  probNameWinner: { 
+    fontWeight: 'bold', 
+    color: '#2c3e50' 
+  },
+  probBarBackground: { 
+    flex: 1, 
+    height: 10, 
+    backgroundColor: '#ecf0f1', 
+    borderRadius: 5, 
+    overflow: 'hidden', 
+    marginRight: 10 
+  },
+  probBarFill: { 
+    height: '100%', 
+    borderRadius: 5 
+  },
+  probValueText: 
+  { width: 45, 
+    fontSize: 11, 
+    textAlign: 'right', 
+    color: '#7f8c8d' 
+  },
+  probValueTextWinner: 
+  { fontWeight: 'bold', 
+    color: '#27ae60' 
   },
   imageWrapper: {
     width: 280,

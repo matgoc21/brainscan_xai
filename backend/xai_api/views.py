@@ -3,9 +3,9 @@ from rest_framework.response import Response
 from rest_framework import status, generics, permissions
 from django.shortcuts import render
 from rest_framework.parsers import FormParser , MultiPartParser
-from .serializers import MRIUploadSerializer, ScanAnalysisSerializer
+from .serializers import MRIUploadSerializer, ScanAnalysisSerializer, PatientSerializer
 from .xai_service import generate_gradcam_and_predict
-from .models import ScanAnalysis
+from .models import ScanAnalysis, Patient
 
 
 # Create your views here.
@@ -55,20 +55,33 @@ class ScanListCreateView(generics.ListCreateAPIView):
 
     def create(self, request, *args, **kwargs):
         image_file = request.FILES.get('image')
-        patinet_id = request.data.get('patient_identifier', 'Anonimowy')
+        patient_id = request.data.get('patient_identifier', 'Anonimowy')
 
         if not image_file:
             return Response({"error": "Brak pliku o kluczu 'image' w żądaniu."}, status=status.HTTP_400_BAD_REQUEST)
+
+
+        patient, created = Patient.objects.get_or_create(
+            identifier=patient_id,
+            defaults={
+                'first_name': request.data.get('first_name', ''),
+                'last_name': request.data.get('last_name', ''),
+                'age':  request.data.get('age') if request.data.get('age') else None,
+                'gender': request.data.get('gender', '')
+            }
+        )
 
         analysis_result = generate_gradcam_and_predict(image_file)
 
         scan = ScanAnalysis.objects.create(
             user = request.user,
-            patient_id=patinet_id,
+            #patient_id=patinet_id,
+            patient=patient,
             original_image=image_file,
             heatmap_image=analysis_result['heatmap_file'],
             predicted_class=analysis_result['prediction'],
-            confidence_percent=analysis_result['confidence']
+            confidence_percent=analysis_result['confidence'],
+            probabilities=analysis_result['probabilities']
         )
 
         serializer = self.get_serializer(scan)
