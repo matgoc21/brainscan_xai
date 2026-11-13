@@ -1,0 +1,1694 @@
+image,actual_class,predicted_class,confidence_percent,correct
+glioma/Tr-gl_49.jpg,glioma,glioma,99.61,True
+glioma/gg (340).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_312.jpg,glioma,glioma,100.0,True
+glioma/gg (530).jpg,glioma,glioma,99.77,True
+glioma/Tr-gl_1003.jpg,glioma,glioma,97.28,True
+glioma/Tr-gl_887.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_914.jpg,glioma,glioma,98.61,True
+glioma/Tr-gl_638.jpg,glioma,glioma,100.0,True
+glioma/gg (342).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_567.jpg,glioma,glioma,100.0,True
+glioma/gg (203).jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_1179.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1308.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_640.jpg,glioma,glioma,98.37,True
+glioma/Tr-gl_95.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1091.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_568.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_754.jpg,glioma,glioma,98.67,True
+glioma/gg (402).jpg,glioma,glioma,99.99,True
+glioma/gg (485).jpg,glioma,glioma,99.31,True
+glioma/gg (741).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_186.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_988.jpg,glioma,glioma,97.75,True
+glioma/Tr-gl_378.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_991.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_615.jpg,glioma,glioma,99.99,True
+glioma/gg (25).jpg,glioma,glioma,86.22,True
+glioma/Tr-gl_1103.jpg,glioma,glioma,99.92,True
+glioma/Tr-gl_188.jpg,glioma,glioma,94.62,True
+glioma/gg (585).jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_1199.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1229.jpg,glioma,glioma,99.58,True
+glioma/gg (103).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_255.jpg,glioma,glioma,91.01,True
+glioma/gg (415).jpg,glioma,glioma,99.85,True
+glioma/gg (692).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_959.jpg,glioma,glioma,99.31,True
+glioma/Tr-gl_1145.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_94.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_327.jpg,glioma,glioma,99.83,True
+glioma/gg (137).jpg,glioma,glioma,78.42,True
+glioma/gg (381).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1167.jpg,glioma,glioma,99.99,True
+glioma/gg (609).jpg,glioma,glioma,94.97,True
+glioma/Tr-gl_980.jpg,glioma,glioma,99.88,True
+glioma/gg (483).jpg,glioma,glioma,97.18,True
+glioma/Tr-gl_881.jpg,glioma,glioma,96.23,True
+glioma/Tr-gl_215.jpg,glioma,glioma,97.63,True
+glioma/gg (495).jpg,glioma,glioma,99.64,True
+glioma/gg (721).jpg,glioma,glioma,92.73,True
+glioma/Tr-gl_862.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_535.jpg,glioma,glioma,100.0,True
+glioma/gg (278).jpg,glioma,glioma,100.0,True
+glioma/gg (639).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1197.jpg,glioma,glioma,99.89,True
+glioma/gg (814).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1288.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_329.jpg,glioma,glioma,99.45,True
+glioma/gg (197).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_341.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_453.jpg,glioma,glioma,100.0,True
+glioma/gg (370).jpg,glioma,glioma,94.58,True
+glioma/Tr-gl_299.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1375.jpg,glioma,glioma,99.5,True
+glioma/gg (131).jpg,glioma,glioma,98.52,True
+glioma/gg (804).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_232.jpg,glioma,glioma,99.99,True
+glioma/gg (62).jpg,glioma,glioma,100.0,True
+glioma/gg (156).jpg,glioma,glioma,97.21,True
+glioma/Tr-gl_1348.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_278.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_675.jpg,glioma,glioma,96.92,True
+glioma/Tr-gl_747.jpg,glioma,glioma,94.52,True
+glioma/gg (258).jpg,glioma,glioma,99.82,True
+glioma/Tr-gl_1033.jpg,glioma,glioma,80.25,True
+glioma/gg (326).jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_601.jpg,glioma,glioma,94.37,True
+glioma/gg (454).jpg,glioma,glioma,94.95,True
+glioma/Tr-gl_523.jpg,glioma,glioma,99.99,True
+glioma/gg (614).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_21.jpg,glioma,glioma,99.99,True
+glioma/gg (682).jpg,glioma,glioma,99.87,True
+glioma/gg (810).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_385.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1304.jpg,glioma,glioma,99.67,True
+glioma/Tr-gl_400.jpg,glioma,glioma,99.74,True
+glioma/gg (167).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_295.jpg,glioma,glioma,87.76,True
+glioma/gg (327).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_190.jpg,glioma,glioma,98.25,True
+glioma/Tr-gl_430.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_259.jpg,glioma,glioma,94.01,True
+glioma/Tr-gl_263.jpg,glioma,glioma,99.97,True
+glioma/Tr-gl_979.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1138.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_314.jpg,glioma,glioma,100.0,True
+glioma/gg (196).jpg,glioma,glioma,99.96,True
+glioma/Tr-gl_1137.jpg,glioma,glioma,99.86,True
+glioma/gg (69).jpg,glioma,glioma,99.96,True
+glioma/gg (261).jpg,glioma,glioma,96.69,True
+glioma/gg (735).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_214.jpg,glioma,glioma,99.99,True
+glioma/gg (657).jpg,glioma,glioma,100.0,True
+glioma/gg (653).jpg,glioma,glioma,98.01,True
+glioma/Tr-gl_31.jpg,glioma,glioma,96.8,True
+glioma/Tr-gl_727.jpg,glioma,glioma,100.0,True
+glioma/gg (38).jpg,glioma,glioma,98.84,True
+glioma/Tr-gl_1218.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1291.jpg,glioma,glioma,97.28,True
+glioma/gg (145).jpg,glioma,glioma,96.21,True
+glioma/Tr-gl_467.jpg,glioma,glioma,99.91,True
+glioma/Tr-gl_1147.jpg,glioma,glioma,99.78,True
+glioma/Tr-gl_342.jpg,glioma,glioma,100.0,True
+glioma/gg (780).jpg,glioma,glioma,99.68,True
+glioma/Tr-gl_1351.jpg,glioma,glioma,98.47,True
+glioma/Tr-gl_434.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_752.jpg,glioma,glioma,99.82,True
+glioma/gg (330).jpg,glioma,glioma,100.0,True
+glioma/gg (417).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1084.jpg,glioma,glioma,89.4,True
+glioma/gg (426).jpg,glioma,glioma,98.57,True
+glioma/Tr-gl_668.jpg,glioma,glioma,96.07,True
+glioma/Tr-gl_1253.jpg,glioma,glioma,99.86,True
+glioma/gg (661).jpg,glioma,glioma,100.0,True
+glioma/gg (681).jpg,glioma,glioma,98.06,True
+glioma/Tr-gl_854.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1042.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_658.jpg,glioma,glioma,82.42,True
+glioma/Tr-gl_1098.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_34.jpg,glioma,glioma,98.38,True
+glioma/Tr-gl_715.jpg,glioma,glioma,99.5,True
+glioma/gg (756).jpg,glioma,glioma,99.77,True
+glioma/Tr-gl_323.jpg,glioma,glioma,100.0,True
+glioma/gg (504).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_639.jpg,glioma,glioma,96.15,True
+glioma/Tr-gl_82.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_217.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_470.jpg,glioma,glioma,97.39,True
+glioma/Tr-gl_624.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_375.jpg,glioma,glioma,96.99,True
+glioma/Tr-gl_771.jpg,glioma,glioma,99.51,True
+glioma/gg (451).jpg,glioma,glioma,99.74,True
+glioma/Tr-gl_1273.jpg,glioma,glioma,99.48,True
+glioma/Tr-gl_694.jpg,glioma,glioma,97.75,True
+glioma/gg (114).jpg,glioma,glioma,99.94,True
+glioma/Tr-gl_411.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1056.jpg,glioma,glioma,100.0,True
+glioma/gg (486).jpg,glioma,glioma,99.06,True
+glioma/Tr-gl_1366.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1363.jpg,glioma,glioma,96.82,True
+glioma/gg (193).jpg,glioma,glioma,100.0,True
+glioma/gg (287).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_361.jpg,glioma,glioma,100.0,True
+glioma/gg (260).jpg,glioma,glioma,88.82,True
+glioma/Tr-gl_100.jpg,glioma,glioma,98.38,True
+glioma/gg (444).jpg,glioma,glioma,98.1,True
+glioma/Tr-gl_1107.jpg,glioma,glioma,99.98,True
+glioma/gg (548).jpg,glioma,glioma,99.44,True
+glioma/gg (79).jpg,glioma,glioma,99.99,True
+glioma/gg (266).jpg,glioma,glioma,99.78,True
+glioma/gg (746).jpg,glioma,glioma,99.93,True
+glioma/Tr-gl_711.jpg,glioma,glioma,99.94,True
+glioma/gg (763).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1170.jpg,glioma,glioma,98.72,True
+glioma/gg (671).jpg,glioma,glioma,97.32,True
+glioma/Tr-gl_680.jpg,glioma,glioma,99.9,True
+glioma/Tr-gl_1126.jpg,glioma,glioma,96.32,True
+glioma/gg (218).jpg,glioma,glioma,99.5,True
+glioma/Tr-gl_284.jpg,glioma,glioma,100.0,True
+glioma/gg (302).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_481.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_486.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_710.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_379.jpg,glioma,glioma,99.31,True
+glioma/Tr-gl_968.jpg,glioma,glioma,99.91,True
+glioma/gg (184).jpg,glioma,glioma,100.0,True
+glioma/gg (368).jpg,glioma,glioma,99.45,True
+glioma/Tr-gl_513.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_763.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_210.jpg,glioma,glioma,83.7,True
+glioma/Tr-gl_761.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_709.jpg,glioma,glioma,99.92,True
+glioma/gg (646).jpg,glioma,glioma,99.25,True
+glioma/Tr-gl_62.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1037.jpg,glioma,glioma,100.0,True
+glioma/gg (111).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1097.jpg,glioma,glioma,100.0,True
+glioma/gg (259).jpg,glioma,glioma,99.92,True
+glioma/Tr-gl_1118.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1395.jpg,glioma,glioma,99.99,True
+glioma/gg (748).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1313.jpg,glioma,glioma,100.0,True
+glioma/gg (238).jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_685.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_819.jpg,glioma,glioma,99.92,True
+glioma/Tr-gl_762.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_737.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_298.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_158.jpg,glioma,glioma,99.96,True
+glioma/Tr-gl_915.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_840.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_130.jpg,glioma,glioma,99.96,True
+glioma/Tr-gl_365.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_802.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1151.jpg,glioma,glioma,100.0,True
+glioma/gg (96).jpg,glioma,glioma,98.91,True
+glioma/gg (677).jpg,glioma,glioma,99.9,True
+glioma/gg (206).jpg,glioma,glioma,100.0,True
+glioma/gg (437).jpg,glioma,glioma,85.69,True
+glioma/Tr-gl_201.jpg,glioma,glioma,98.27,True
+glioma/Tr-gl_235.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1332.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_769.jpg,glioma,glioma,99.34,True
+glioma/Tr-gl_1177.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_978.jpg,glioma,glioma,81.64,True
+glioma/Tr-gl_657.jpg,glioma,glioma,99.94,True
+glioma/gg (529).jpg,glioma,glioma,82.96,True
+glioma/Tr-gl_1222.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_812.jpg,glioma,glioma,99.9,True
+glioma/Tr-gl_489.jpg,glioma,glioma,99.04,True
+glioma/Tr-gl_628.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_827.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1228.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1006.jpg,glioma,glioma,99.5,True
+glioma/gg (808).jpg,glioma,glioma,99.95,True
+glioma/Tr-gl_1274.jpg,glioma,glioma,77.8,True
+glioma/Tr-gl_1152.jpg,glioma,glioma,99.35,True
+glioma/Tr-gl_139.jpg,glioma,glioma,100.0,True
+glioma/gg (494).jpg,glioma,glioma,99.95,True
+glioma/Tr-gl_89.jpg,glioma,glioma,99.73,True
+glioma/gg (408).jpg,glioma,glioma,99.71,True
+glioma/Tr-gl_1021.jpg,glioma,glioma,100.0,True
+glioma/gg (576).jpg,glioma,glioma,99.33,True
+glioma/gg (621).jpg,glioma,glioma,93.24,True
+glioma/Tr-gl_326.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_863.jpg,glioma,glioma,99.01,True
+glioma/gg (473).jpg,glioma,glioma,88.5,True
+glioma/Tr-gl_273.jpg,glioma,glioma,99.63,True
+glioma/Tr-gl_110.jpg,glioma,glioma,100.0,True
+glioma/gg (250).jpg,glioma,glioma,98.31,True
+glioma/Tr-gl_1024.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_145.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_5.jpg,glioma,glioma,98.84,True
+glioma/Tr-gl_431.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_376.jpg,glioma,glioma,99.99,True
+glioma/gg (89).jpg,glioma,glioma,99.19,True
+glioma/gg (706).jpg,glioma,glioma,91.78,True
+glioma/gg (596).jpg,glioma,glioma,99.81,True
+glioma/Tr-gl_460.jpg,glioma,glioma,99.1,True
+glioma/Tr-gl_730.jpg,glioma,glioma,97.34,True
+glioma/Tr-gl_270.jpg,glioma,glioma,99.89,True
+glioma/gg (212).jpg,glioma,glioma,99.81,True
+glioma/gg (628).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1326.jpg,glioma,glioma,99.99,True
+glioma/gg (757).jpg,glioma,glioma,100.0,True
+glioma/gg (56).jpg,glioma,glioma,100.0,True
+glioma/gg (739).jpg,glioma,glioma,100.0,True
+glioma/gg (434).jpg,glioma,glioma,97.54,True
+glioma/gg (792).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_757.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_594.jpg,glioma,glioma,96.91,True
+glioma/Tr-gl_610.jpg,glioma,glioma,100.0,True
+glioma/gg (429).jpg,glioma,glioma,99.8,True
+glioma/gg (81).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1161.jpg,glioma,glioma,89.92,True
+glioma/gg (57).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_773.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1053.jpg,glioma,glioma,100.0,True
+glioma/gg (579).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_239.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_180.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_390.jpg,glioma,glioma,99.98,True
+glioma/gg (464).jpg,glioma,glioma,99.48,True
+glioma/gg (549).jpg,glioma,glioma,97.0,True
+glioma/Tr-gl_1281.jpg,glioma,glioma,98.03,True
+glioma/Tr-gl_655.jpg,glioma,glioma,99.72,True
+glioma/Tr-gl_72.jpg,glioma,glioma,98.24,True
+glioma/Tr-gl_1027.jpg,glioma,glioma,86.34,True
+glioma/Tr-gl_987.jpg,glioma,meningioma,59.83,False
+glioma/Tr-gl_1159.jpg,glioma,meningioma,67.95,False
+glioma/Tr-gl_1330.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1331.jpg,glioma,glioma,99.79,True
+glioma/Tr-gl_1321.jpg,glioma,glioma,93.42,True
+glioma/Tr-gl_575.jpg,glioma,glioma,97.7,True
+glioma/Tr-gl_1343.jpg,glioma,glioma,99.99,True
+glioma/gg (698).jpg,glioma,glioma,99.91,True
+glioma/gg (313).jpg,glioma,glioma,100.0,True
+glioma/gg (550).jpg,glioma,glioma,99.69,True
+glioma/Tr-gl_583.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_784.jpg,glioma,glioma,100.0,True
+glioma/gg (44).jpg,glioma,glioma,100.0,True
+glioma/gg (558).jpg,glioma,glioma,99.98,True
+glioma/gg (119).jpg,glioma,glioma,99.95,True
+glioma/Tr-gl_422.jpg,glioma,glioma,99.42,True
+glioma/gg (189).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_76.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1004.jpg,glioma,glioma,89.55,True
+glioma/Tr-gl_526.jpg,glioma,glioma,99.93,True
+glioma/Tr-gl_334.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_492.jpg,glioma,glioma,100.0,True
+glioma/gg (711).jpg,glioma,glioma,98.6,True
+glioma/Tr-gl_3.jpg,glioma,glioma,100.0,True
+glioma/gg (423).jpg,glioma,glioma,99.79,True
+glioma/gg (506).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1369.jpg,glioma,glioma,97.69,True
+glioma/Tr-gl_53.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_1158.jpg,glioma,glioma,100.0,True
+glioma/gg (769).jpg,glioma,glioma,100.0,True
+glioma/gg (63).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_756.jpg,glioma,glioma,100.0,True
+glioma/gg (666).jpg,glioma,glioma,99.98,True
+glioma/gg (588).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1392.jpg,glioma,glioma,85.96,True
+glioma/gg (236).jpg,glioma,glioma,100.0,True
+glioma/gg (412).jpg,glioma,glioma,99.92,True
+glioma/Tr-gl_696.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_660.jpg,glioma,glioma,99.83,True
+glioma/gg (92).jpg,glioma,glioma,100.0,True
+glioma/gg (214).jpg,glioma,glioma,99.51,True
+glioma/gg (117).jpg,glioma,glioma,99.99,True
+glioma/gg (820).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_917.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_506.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1160.jpg,glioma,glioma,100.0,True
+glioma/gg (477).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1353.jpg,glioma,glioma,97.23,True
+glioma/Tr-gl_96.jpg,glioma,glioma,97.26,True
+glioma/Tr-gl_974.jpg,glioma,glioma,100.0,True
+glioma/gg (691).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1153.jpg,glioma,glioma,93.44,True
+glioma/Tr-gl_813.jpg,glioma,glioma,99.88,True
+glioma/Tr-gl_581.jpg,glioma,glioma,99.87,True
+glioma/Tr-gl_700.jpg,glioma,glioma,99.9,True
+glioma/gg (98).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_102.jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_360.jpg,glioma,glioma,99.16,True
+glioma/Tr-gl_491.jpg,glioma,glioma,98.35,True
+glioma/gg (460).jpg,glioma,glioma,99.3,True
+glioma/gg (198).jpg,glioma,glioma,99.96,True
+glioma/Tr-gl_548.jpg,glioma,glioma,99.56,True
+glioma/gg (784).jpg,glioma,glioma,100.0,True
+glioma/gg (199).jpg,glioma,glioma,99.93,True
+glioma/Tr-gl_693.jpg,glioma,glioma,99.66,True
+glioma/Tr-gl_528.jpg,glioma,glioma,91.19,True
+glioma/Tr-gl_976.jpg,glioma,meningioma,56.69,False
+glioma/Tr-gl_35.jpg,glioma,glioma,76.17,True
+glioma/Tr-gl_945.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_502.jpg,glioma,glioma,74.57,True
+glioma/gg (439).jpg,glioma,glioma,99.26,True
+glioma/Tr-gl_1299.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_751.jpg,glioma,glioma,93.39,True
+glioma/Tr-gl_1046.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_970.jpg,glioma,glioma,99.91,True
+glioma/Tr-gl_879.jpg,glioma,glioma,99.93,True
+glioma/gg (338).jpg,glioma,glioma,94.08,True
+glioma/Tr-gl_447.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_138.jpg,glioma,glioma,99.94,True
+glioma/Tr-gl_394.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1256.jpg,glioma,glioma,97.23,True
+glioma/Tr-gl_32.jpg,glioma,glioma,97.6,True
+glioma/Tr-gl_946.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_719.jpg,glioma,glioma,94.61,True
+glioma/gg (764).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_910.jpg,glioma,glioma,99.97,True
+glioma/Tr-gl_1070.jpg,glioma,glioma,99.99,True
+glioma/gg (360).jpg,glioma,glioma,99.97,True
+glioma/gg (480).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_84.jpg,glioma,glioma,99.97,True
+glioma/gg (636).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1049.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1307.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_454.jpg,glioma,glioma,99.99,True
+glioma/gg (730).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_497.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1181.jpg,glioma,glioma,99.99,True
+glioma/gg (738).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1162.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_981.jpg,glioma,glioma,99.99,True
+glioma/gg (65).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_525.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_252.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1124.jpg,glioma,glioma,99.97,True
+glioma/Tr-gl_463.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_41.jpg,glioma,glioma,99.82,True
+glioma/gg (823).jpg,glioma,glioma,99.92,True
+glioma/Tr-gl_922.jpg,glioma,glioma,100.0,True
+glioma/gg (766).jpg,glioma,glioma,100.0,True
+glioma/gg (333).jpg,glioma,glioma,100.0,True
+glioma/gg (346).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1030.jpg,glioma,glioma,99.79,True
+glioma/Tr-gl_1122.jpg,glioma,glioma,99.98,True
+glioma/gg (299).jpg,glioma,glioma,100.0,True
+glioma/gg (97).jpg,glioma,glioma,99.64,True
+glioma/Tr-gl_1205.jpg,glioma,glioma,97.65,True
+glioma/Tr-gl_512.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_9.jpg,glioma,glioma,99.45,True
+glioma/Tr-gl_33.jpg,glioma,glioma,98.26,True
+glioma/Tr-gl_1262.jpg,glioma,glioma,98.52,True
+glioma/Tr-gl_55.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1359.jpg,glioma,glioma,99.87,True
+glioma/Tr-gl_1092.jpg,glioma,glioma,99.25,True
+glioma/gg (438).jpg,glioma,glioma,99.08,True
+glioma/Tr-gl_282.jpg,glioma,glioma,99.97,True
+glioma/Tr-gl_800.jpg,glioma,glioma,99.97,True
+glioma/Tr-gl_764.jpg,glioma,glioma,99.67,True
+glioma/gg (466).jpg,glioma,glioma,93.72,True
+glioma/gg (822).jpg,glioma,glioma,100.0,True
+glioma/gg (265).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_77.jpg,glioma,glioma,87.61,True
+glioma/gg (414).jpg,glioma,glioma,99.94,True
+glioma/gg (298).jpg,glioma,glioma,100.0,True
+glioma/gg (770).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1087.jpg,glioma,glioma,100.0,True
+glioma/gg (392).jpg,glioma,glioma,99.95,True
+glioma/Tr-gl_530.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1380.jpg,glioma,glioma,100.0,True
+glioma/gg (344).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_739.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_388.jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_120.jpg,glioma,glioma,99.96,True
+glioma/gg (664).jpg,glioma,glioma,99.99,True
+glioma/gg (50).jpg,glioma,glioma,99.1,True
+glioma/gg (293).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_666.jpg,glioma,glioma,96.98,True
+glioma/gg (161).jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_797.jpg,glioma,glioma,99.92,True
+glioma/Tr-gl_8.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1112.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1226.jpg,glioma,glioma,99.65,True
+glioma/Tr-gl_93.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_389.jpg,glioma,glioma,99.99,True
+glioma/gg (80).jpg,glioma,glioma,100.0,True
+glioma/gg (359).jpg,glioma,glioma,99.98,True
+glioma/Tr-gl_803.jpg,glioma,glioma,99.82,True
+glioma/gg (284).jpg,glioma,glioma,100.0,True
+glioma/gg (351).jpg,glioma,glioma,99.99,True
+glioma/Tr-gl_403.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_1100.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_905.jpg,glioma,glioma,91.21,True
+glioma/gg (708).jpg,glioma,glioma,93.26,True
+glioma/Tr-gl_875.jpg,glioma,glioma,99.99,True
+glioma/gg (324).jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_103.jpg,glioma,glioma,99.97,True
+glioma/Tr-gl_1119.jpg,glioma,glioma,100.0,True
+glioma/Tr-gl_850.jpg,glioma,glioma,97.59,True
+meningioma/Tr-me_538.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_818.jpg,meningioma,meningioma,89.67,True
+meningioma/Tr-me_90.jpg,meningioma,meningioma,99.23,True
+meningioma/Tr-aug-me_73.jpg,meningioma,meningioma,54.91,True
+meningioma/m2 (124).jpg,meningioma,meningioma,60.7,True
+meningioma/m3 (80).jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_200.jpg,meningioma,meningioma,92.83,True
+meningioma/Tr-me_484.jpg,meningioma,glioma,53.38,False
+meningioma/Tr-me_637.jpg,meningioma,meningioma,99.87,True
+meningioma/m2 (80).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_571.jpg,meningioma,meningioma,66.47,True
+meningioma/Tr-me_1053.jpg,meningioma,meningioma,99.99,True
+meningioma/m2 (165).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_488.jpg,meningioma,meningioma,72.44,True
+meningioma/Tr-me_468.jpg,meningioma,meningioma,99.81,True
+meningioma/Tr-me_300.jpg,meningioma,meningioma,99.1,True
+meningioma/Tr-me_1009.jpg,meningioma,meningioma,99.93,True
+meningioma/Tr-me_918.jpg,meningioma,meningioma,94.93,True
+meningioma/Tr-me_1105.jpg,meningioma,meningioma,99.44,True
+meningioma/Tr-me_586.jpg,meningioma,meningioma,99.97,True
+meningioma/m1(43).jpg,meningioma,meningioma,61.23,True
+meningioma/Tr-aug-me_25.jpg,meningioma,meningioma,85.12,True
+meningioma/Tr-me_115.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-aug-me_64.jpg,meningioma,meningioma,99.59,True
+meningioma/m1(37).jpg,meningioma,meningioma,78.11,True
+meningioma/Tr-me_1132.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_1175.jpg,meningioma,meningioma,87.62,True
+meningioma/Tr-me_61.jpg,meningioma,meningioma,99.28,True
+meningioma/Tr-aug-me_9.jpg,meningioma,glioma,86.73,False
+meningioma/Tr-me_362.jpg,meningioma,meningioma,95.72,True
+meningioma/Tr-me_395.jpg,meningioma,meningioma,100.0,True
+meningioma/m1(87).jpg,meningioma,meningioma,93.37,True
+meningioma/m3 (223).jpg,meningioma,meningioma,99.06,True
+meningioma/m (116).jpg,meningioma,meningioma,99.97,True
+meningioma/m1(24).jpg,meningioma,meningioma,100.0,True
+meningioma/m (125).jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_1084.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1228.jpg,meningioma,meningioma,96.51,True
+meningioma/m2 (84).jpg,meningioma,meningioma,99.88,True
+meningioma/Tr-me_274.jpg,meningioma,meningioma,76.12,True
+meningioma/m3 (226).jpg,meningioma,meningioma,99.88,True
+meningioma/Tr-me_1176.jpg,meningioma,meningioma,98.49,True
+meningioma/Tr-aug-me_31.jpg,meningioma,meningioma,99.96,True
+meningioma/m (157).jpg,meningioma,meningioma,99.81,True
+meningioma/Tr-me_627.jpg,meningioma,meningioma,64.64,True
+meningioma/Tr-me_369.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_194.jpg,meningioma,meningioma,68.57,True
+meningioma/Tr-me_296.jpg,meningioma,meningioma,99.23,True
+meningioma/Tr-me_57.jpg,meningioma,meningioma,99.83,True
+meningioma/Tr-me_905.jpg,meningioma,meningioma,99.95,True
+meningioma/Tr-aug-me_69.jpg,meningioma,meningioma,100.0,True
+meningioma/m (7).jpg,meningioma,meningioma,79.22,True
+meningioma/Tr-me_1284.jpg,meningioma,meningioma,72.03,True
+meningioma/Tr-me_31.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_336.jpg,meningioma,meningioma,67.57,True
+meningioma/Tr-me_793.jpg,meningioma,meningioma,99.06,True
+meningioma/m2 (89).jpg,meningioma,meningioma,96.29,True
+meningioma/Tr-me_532.jpg,meningioma,meningioma,61.58,True
+meningioma/Tr-me_1165.jpg,meningioma,meningioma,99.99,True
+meningioma/m1(185).jpg,meningioma,meningioma,99.94,True
+meningioma/Tr-me_968.jpg,meningioma,meningioma,95.44,True
+meningioma/m3 (77).jpg,meningioma,meningioma,99.75,True
+meningioma/m3 (38).jpg,meningioma,meningioma,99.34,True
+meningioma/m2 (123).jpg,meningioma,meningioma,99.9,True
+meningioma/m2 (38).jpg,meningioma,meningioma,80.91,True
+meningioma/Tr-me_199.jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_95.jpg,meningioma,meningioma,78.11,True
+meningioma/Tr-me_590.jpg,meningioma,meningioma,99.88,True
+meningioma/m2 (146).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_843.jpg,meningioma,glioma,73.78,False
+meningioma/Tr-me_799.jpg,meningioma,meningioma,95.12,True
+meningioma/Tr-me_722.jpg,meningioma,meningioma,94.41,True
+meningioma/Tr-me_1005.jpg,meningioma,pituitary,50.51,False
+meningioma/Tr-me_717.jpg,meningioma,meningioma,99.87,True
+meningioma/Tr-me_1150.jpg,meningioma,meningioma,78.48,True
+meningioma/Tr-me_1157.jpg,meningioma,meningioma,99.5,True
+meningioma/Tr-me_943.jpg,meningioma,meningioma,99.21,True
+meningioma/m3 (53).jpg,meningioma,meningioma,100.0,True
+meningioma/m1(124).jpg,meningioma,meningioma,91.86,True
+meningioma/Tr-me_70.jpg,meningioma,meningioma,97.54,True
+meningioma/m2 (78).jpg,meningioma,meningioma,100.0,True
+meningioma/m3 (174).jpg,meningioma,meningioma,55.28,True
+meningioma/Tr-me_564.jpg,meningioma,meningioma,99.99,True
+meningioma/m1(99).jpg,meningioma,meningioma,94.17,True
+meningioma/Tr-me_936.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_970.jpg,meningioma,meningioma,85.33,True
+meningioma/m (64).jpg,meningioma,meningioma,93.61,True
+meningioma/m3 (48).jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_734.jpg,meningioma,meningioma,93.19,True
+meningioma/Tr-me_223.jpg,meningioma,meningioma,70.53,True
+meningioma/m (29).jpg,meningioma,meningioma,100.0,True
+meningioma/m1(51).jpg,meningioma,meningioma,62.05,True
+meningioma/Tr-me_684.jpg,meningioma,meningioma,99.88,True
+meningioma/Tr-me_593.jpg,meningioma,meningioma,51.3,True
+meningioma/Tr-me_310.jpg,meningioma,meningioma,95.33,True
+meningioma/Tr-me_279.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_456.jpg,meningioma,meningioma,99.65,True
+meningioma/m1(189).jpg,meningioma,meningioma,99.73,True
+meningioma/Tr-me_110.jpg,meningioma,meningioma,79.2,True
+meningioma/Tr-me_350.jpg,meningioma,meningioma,84.88,True
+meningioma/Tr-me_897.jpg,meningioma,notumor,69.79,False
+meningioma/m3 (82).jpg,meningioma,meningioma,99.07,True
+meningioma/Tr-me_592.jpg,meningioma,meningioma,89.24,True
+meningioma/m (54).jpg,meningioma,meningioma,56.02,True
+meningioma/Tr-me_601.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_98.jpg,meningioma,meningioma,99.9,True
+meningioma/Tr-me_1286.jpg,meningioma,meningioma,89.78,True
+meningioma/Tr-me_496.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_437.jpg,meningioma,meningioma,100.0,True
+meningioma/m3 (57).jpg,meningioma,meningioma,90.99,True
+meningioma/Tr-me_1190.jpg,meningioma,meningioma,62.77,True
+meningioma/Tr-me_737.jpg,meningioma,meningioma,99.94,True
+meningioma/m (164).jpg,meningioma,meningioma,100.0,True
+meningioma/m (17).jpg,meningioma,meningioma,95.46,True
+meningioma/m2 (156).jpg,meningioma,meningioma,99.27,True
+meningioma/m3 (244).jpg,meningioma,meningioma,99.32,True
+meningioma/Tr-me_264.jpg,meningioma,meningioma,95.17,True
+meningioma/Tr-me_707.jpg,meningioma,meningioma,99.5,True
+meningioma/Tr-me_550.jpg,meningioma,meningioma,97.71,True
+meningioma/m3 (122).jpg,meningioma,meningioma,99.93,True
+meningioma/Tr-me_1082.jpg,meningioma,meningioma,78.28,True
+meningioma/Tr-me_297.jpg,meningioma,meningioma,96.71,True
+meningioma/m2 (157).jpg,meningioma,meningioma,99.24,True
+meningioma/Tr-me_828.jpg,meningioma,pituitary,59.76,False
+meningioma/m1(67).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_259.jpg,meningioma,meningioma,99.82,True
+meningioma/Tr-aug-me_65.jpg,meningioma,meningioma,88.99,True
+meningioma/m3 (219).jpg,meningioma,meningioma,99.24,True
+meningioma/m3 (24).jpg,meningioma,meningioma,96.28,True
+meningioma/m3 (61).jpg,meningioma,meningioma,98.77,True
+meningioma/Tr-me_675.jpg,meningioma,meningioma,99.82,True
+meningioma/m1(139).jpg,meningioma,meningioma,91.26,True
+meningioma/Tr-me_1232.jpg,meningioma,meningioma,100.0,True
+meningioma/m1(201).jpg,meningioma,meningioma,71.73,True
+meningioma/Tr-me_233.jpg,meningioma,meningioma,59.47,True
+meningioma/Tr-me_292.jpg,meningioma,meningioma,86.2,True
+meningioma/Tr-me_227.jpg,meningioma,meningioma,99.99,True
+meningioma/m3 (155).jpg,meningioma,meningioma,99.97,True
+meningioma/Tr-me_168.jpg,meningioma,meningioma,70.09,True
+meningioma/Tr-me_1184.jpg,meningioma,meningioma,99.93,True
+meningioma/m2 (2).jpg,meningioma,glioma,50.95,False
+meningioma/m3 (239).jpg,meningioma,meningioma,90.36,True
+meningioma/Tr-aug-me_91.jpg,meningioma,meningioma,100.0,True
+meningioma/m3 (20).jpg,meningioma,glioma,53.16,False
+meningioma/m2 (15).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_355.jpg,meningioma,meningioma,39.46,True
+meningioma/m1(69).jpg,meningioma,meningioma,99.44,True
+meningioma/m1(154).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_429.jpg,meningioma,meningioma,68.53,True
+meningioma/m3 (196).jpg,meningioma,meningioma,99.87,True
+meningioma/Tr-me_856.jpg,meningioma,meningioma,72.37,True
+meningioma/m1(76).jpg,meningioma,meningioma,95.08,True
+meningioma/m1(6).jpg,meningioma,meningioma,99.85,True
+meningioma/Tr-me_887.jpg,meningioma,meningioma,97.4,True
+meningioma/Tr-me_254.jpg,meningioma,meningioma,87.24,True
+meningioma/Tr-me_1270.jpg,meningioma,meningioma,57.42,True
+meningioma/Tr-me_967.jpg,meningioma,meningioma,92.34,True
+meningioma/m3 (228).jpg,meningioma,meningioma,98.48,True
+meningioma/Tr-me_894.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_27.jpg,meningioma,meningioma,97.85,True
+meningioma/Tr-me_44.jpg,meningioma,meningioma,96.06,True
+meningioma/m1(18).jpg,meningioma,meningioma,91.72,True
+meningioma/Tr-aug-me_61.jpg,meningioma,pituitary,88.07,False
+meningioma/Tr-me_833.jpg,meningioma,meningioma,95.83,True
+meningioma/m1(90).jpg,meningioma,meningioma,86.2,True
+meningioma/Tr-me_273.jpg,meningioma,meningioma,65.63,True
+meningioma/m3 (130).jpg,meningioma,meningioma,97.03,True
+meningioma/Tr-me_154.jpg,meningioma,meningioma,99.64,True
+meningioma/m2 (116).jpg,meningioma,meningioma,66.49,True
+meningioma/Tr-aug-me_85.jpg,meningioma,meningioma,99.82,True
+meningioma/Tr-me_380.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_387.jpg,meningioma,meningioma,92.95,True
+meningioma/Tr-me_697.jpg,meningioma,meningioma,99.0,True
+meningioma/Tr-me_756.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_748.jpg,meningioma,meningioma,98.29,True
+meningioma/Tr-me_1114.jpg,meningioma,meningioma,98.91,True
+meningioma/m (159).jpg,meningioma,meningioma,97.37,True
+meningioma/Tr-me_164.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-aug-me_60.jpg,meningioma,meningioma,66.63,True
+meningioma/m3 (85).jpg,meningioma,meningioma,100.0,True
+meningioma/m1(15).jpg,meningioma,meningioma,98.63,True
+meningioma/Tr-me_652.jpg,meningioma,meningioma,99.89,True
+meningioma/Tr-aug-me_80.jpg,meningioma,meningioma,99.31,True
+meningioma/Tr-me_364.jpg,meningioma,meningioma,92.65,True
+meningioma/Tr-me_744.jpg,meningioma,meningioma,87.72,True
+meningioma/Tr-me_258.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_527.jpg,meningioma,meningioma,97.42,True
+meningioma/Tr-me_664.jpg,meningioma,meningioma,72.38,True
+meningioma/m2 (27).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-aug-me_18.jpg,meningioma,meningioma,88.94,True
+meningioma/Tr-me_1041.jpg,meningioma,meningioma,99.87,True
+meningioma/m2 (88).jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_1181.jpg,meningioma,meningioma,78.04,True
+meningioma/Tr-me_569.jpg,meningioma,meningioma,99.94,True
+meningioma/Tr-me_485.jpg,meningioma,glioma,60.72,False
+meningioma/Tr-me_874.jpg,meningioma,meningioma,50.91,True
+meningioma/Tr-me_1036.jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_1100.jpg,meningioma,meningioma,94.64,True
+meningioma/m1(165).jpg,meningioma,meningioma,97.24,True
+meningioma/Tr-me_924.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_912.jpg,meningioma,meningioma,52.59,True
+meningioma/m3 (15).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_716.jpg,meningioma,meningioma,84.43,True
+meningioma/Tr-me_915.jpg,meningioma,meningioma,92.19,True
+meningioma/m2 (72).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1061.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_210.jpg,meningioma,meningioma,99.94,True
+meningioma/m3 (52).jpg,meningioma,meningioma,65.02,True
+meningioma/m (52).jpg,meningioma,meningioma,63.62,True
+meningioma/Tr-aug-me_48.jpg,meningioma,meningioma,99.96,True
+meningioma/m3 (66).jpg,meningioma,meningioma,60.86,True
+meningioma/m3 (116).jpg,meningioma,meningioma,99.19,True
+meningioma/m2 (54).jpg,meningioma,meningioma,96.3,True
+meningioma/Tr-me_840.jpg,meningioma,meningioma,99.98,True
+meningioma/m (165).jpg,meningioma,meningioma,99.02,True
+meningioma/m3 (94).jpg,meningioma,meningioma,97.13,True
+meningioma/m3 (197).jpg,meningioma,meningioma,99.94,True
+meningioma/Tr-me_645.jpg,meningioma,meningioma,99.5,True
+meningioma/Tr-me_1172.jpg,meningioma,meningioma,56.17,True
+meningioma/Tr-me_577.jpg,meningioma,meningioma,93.3,True
+meningioma/m (98).jpg,meningioma,meningioma,84.49,True
+meningioma/Tr-me_1216.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1135.jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_745.jpg,meningioma,meningioma,97.28,True
+meningioma/m1(84).jpg,meningioma,meningioma,92.56,True
+meningioma/m3 (240).jpg,meningioma,meningioma,79.52,True
+meningioma/m2 (177).jpg,meningioma,meningioma,99.23,True
+meningioma/Tr-me_62.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_325.jpg,meningioma,meningioma,99.75,True
+meningioma/m3 (3).jpg,meningioma,meningioma,97.61,True
+meningioma/m3 (181).jpg,meningioma,meningioma,99.93,True
+meningioma/m1(178).jpg,meningioma,meningioma,95.98,True
+meningioma/Tr-me_299.jpg,meningioma,meningioma,98.3,True
+meningioma/Tr-me_893.jpg,meningioma,pituitary,55.88,False
+meningioma/Tr-me_797.jpg,meningioma,meningioma,90.36,True
+meningioma/Tr-me_821.jpg,meningioma,meningioma,86.54,True
+meningioma/Tr-me_683.jpg,meningioma,meningioma,51.53,True
+meningioma/Tr-me_1063.jpg,meningioma,meningioma,89.9,True
+meningioma/Tr-me_847.jpg,meningioma,meningioma,99.73,True
+meningioma/Tr-me_232.jpg,meningioma,meningioma,97.8,True
+meningioma/Tr-me_963.jpg,meningioma,meningioma,93.0,True
+meningioma/Tr-me_306.jpg,meningioma,meningioma,85.04,True
+meningioma/m (36).jpg,meningioma,meningioma,70.59,True
+meningioma/m3 (211).jpg,meningioma,meningioma,99.03,True
+meningioma/m1(111).jpg,meningioma,meningioma,99.94,True
+meningioma/Tr-me_535.jpg,meningioma,meningioma,99.93,True
+meningioma/Tr-aug-me_68.jpg,meningioma,meningioma,99.58,True
+meningioma/Tr-me_581.jpg,meningioma,meningioma,99.03,True
+meningioma/Tr-me_917.jpg,meningioma,glioma,64.38,False
+meningioma/Tr-me_17.jpg,meningioma,meningioma,80.35,True
+meningioma/m (187).jpg,meningioma,meningioma,64.03,True
+meningioma/Tr-me_388.jpg,meningioma,meningioma,87.27,True
+meningioma/Tr-me_694.jpg,meningioma,meningioma,100.0,True
+meningioma/m (24).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1188.jpg,meningioma,meningioma,96.3,True
+meningioma/m1(56).jpg,meningioma,meningioma,99.43,True
+meningioma/Tr-me_1095.jpg,meningioma,meningioma,56.64,True
+meningioma/Tr-me_230.jpg,meningioma,meningioma,100.0,True
+meningioma/m (122).jpg,meningioma,meningioma,72.72,True
+meningioma/m2 (95).jpg,meningioma,meningioma,93.65,True
+meningioma/m3 (124).jpg,meningioma,meningioma,100.0,True
+meningioma/m2 (133).jpg,meningioma,pituitary,58.39,False
+meningioma/m2 (128).jpg,meningioma,meningioma,99.99,True
+meningioma/m (30).jpg,meningioma,meningioma,99.99,True
+meningioma/m3 (170).jpg,meningioma,meningioma,64.61,True
+meningioma/Tr-me_568.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_950.jpg,meningioma,meningioma,99.98,True
+meningioma/m1(38).jpg,meningioma,meningioma,96.79,True
+meningioma/Tr-me_940.jpg,meningioma,glioma,53.96,False
+meningioma/Tr-me_681.jpg,meningioma,meningioma,55.63,True
+meningioma/Tr-me_463.jpg,meningioma,meningioma,99.9,True
+meningioma/Tr-me_672.jpg,meningioma,meningioma,80.41,True
+meningioma/Tr-me_605.jpg,meningioma,meningioma,99.95,True
+meningioma/Tr-me_64.jpg,meningioma,meningioma,99.98,True
+meningioma/Tr-me_1147.jpg,meningioma,meningioma,92.32,True
+meningioma/Tr-me_576.jpg,meningioma,meningioma,55.43,True
+meningioma/Tr-me_376.jpg,meningioma,meningioma,98.68,True
+meningioma/Tr-me_335.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_973.jpg,meningioma,meningioma,82.91,True
+meningioma/m1(106).jpg,meningioma,meningioma,100.0,True
+meningioma/m3 (206).jpg,meningioma,meningioma,99.6,True
+meningioma/Tr-me_201.jpg,meningioma,glioma,55.55,False
+meningioma/Tr-me_263.jpg,meningioma,meningioma,98.83,True
+meningioma/Tr-me_36.jpg,meningioma,meningioma,99.58,True
+meningioma/Tr-me_757.jpg,meningioma,meningioma,72.11,True
+meningioma/m3 (28).jpg,meningioma,meningioma,94.29,True
+meningioma/Tr-me_81.jpg,meningioma,meningioma,81.24,True
+meningioma/m3 (32).jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_977.jpg,meningioma,meningioma,99.85,True
+meningioma/m1(195).jpg,meningioma,meningioma,92.48,True
+meningioma/Tr-me_1066.jpg,meningioma,glioma,53.16,False
+meningioma/Tr-me_1138.jpg,meningioma,meningioma,99.63,True
+meningioma/m3 (245).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1265.jpg,meningioma,meningioma,99.83,True
+meningioma/m1(117).jpg,meningioma,meningioma,92.48,True
+meningioma/Tr-me_401.jpg,meningioma,meningioma,99.44,True
+meningioma/m1(100).jpg,meningioma,meningioma,99.95,True
+meningioma/Tr-me_805.jpg,meningioma,meningioma,72.73,True
+meningioma/m1(127).jpg,meningioma,meningioma,98.62,True
+meningioma/m2 (39).jpg,meningioma,meningioma,99.97,True
+meningioma/Tr-me_9.jpg,meningioma,meningioma,99.73,True
+meningioma/Tr-me_261.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_428.jpg,meningioma,meningioma,87.75,True
+meningioma/Tr-me_442.jpg,meningioma,meningioma,99.91,True
+meningioma/Tr-me_356.jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_978.jpg,meningioma,meningioma,97.72,True
+meningioma/Tr-me_865.jpg,meningioma,meningioma,93.01,True
+meningioma/m (44).jpg,meningioma,meningioma,84.0,True
+meningioma/Tr-me_195.jpg,meningioma,meningioma,99.87,True
+meningioma/Tr-aug-me_41.jpg,meningioma,meningioma,84.48,True
+meningioma/Tr-me_930.jpg,meningioma,meningioma,99.96,True
+meningioma/Tr-aug-me_63.jpg,meningioma,meningioma,99.82,True
+meningioma/m3 (186).jpg,meningioma,meningioma,98.3,True
+meningioma/m (179).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_149.jpg,meningioma,meningioma,99.92,True
+meningioma/Tr-me_326.jpg,meningioma,meningioma,99.0,True
+meningioma/Tr-me_275.jpg,meningioma,meningioma,99.78,True
+meningioma/Tr-me_547.jpg,meningioma,meningioma,99.97,True
+meningioma/m2 (173).jpg,meningioma,meningioma,99.81,True
+meningioma/Tr-me_319.jpg,meningioma,meningioma,96.19,True
+meningioma/Tr-me_822.jpg,meningioma,meningioma,99.59,True
+meningioma/m (148).jpg,meningioma,meningioma,99.65,True
+meningioma/Tr-me_934.jpg,meningioma,glioma,79.84,False
+meningioma/Tr-me_554.jpg,meningioma,meningioma,99.08,True
+meningioma/Tr-me_1062.jpg,meningioma,meningioma,99.14,True
+meningioma/m1(44).jpg,meningioma,pituitary,71.7,False
+meningioma/Tr-me_169.jpg,meningioma,meningioma,100.0,True
+meningioma/m (197).jpg,meningioma,meningioma,99.87,True
+meningioma/Tr-me_474.jpg,meningioma,meningioma,75.86,True
+meningioma/Tr-me_507.jpg,meningioma,meningioma,100.0,True
+meningioma/m (37).jpg,meningioma,meningioma,99.85,True
+meningioma/Tr-me_966.jpg,meningioma,meningioma,99.64,True
+meningioma/m3 (139).jpg,meningioma,notumor,62.59,False
+meningioma/Tr-me_480.jpg,meningioma,meningioma,92.77,True
+meningioma/Tr-aug-me_28.jpg,meningioma,meningioma,97.72,True
+meningioma/Tr-me_603.jpg,meningioma,meningioma,100.0,True
+meningioma/m2 (164).jpg,meningioma,meningioma,99.32,True
+meningioma/Tr-me_891.jpg,meningioma,meningioma,99.9,True
+meningioma/Tr-me_475.jpg,meningioma,meningioma,93.53,True
+meningioma/Tr-me_657.jpg,meningioma,meningioma,100.0,True
+meningioma/m1(158).jpg,meningioma,notumor,79.33,False
+meningioma/Tr-me_370.jpg,meningioma,meningioma,99.89,True
+meningioma/m2 (142).jpg,meningioma,meningioma,96.3,True
+meningioma/Tr-me_770.jpg,meningioma,meningioma,60.25,True
+meningioma/Tr-me_529.jpg,meningioma,meningioma,99.93,True
+meningioma/Tr-me_316.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_334.jpg,meningioma,meningioma,99.72,True
+meningioma/Tr-me_58.jpg,meningioma,meningioma,99.48,True
+meningioma/Tr-me_712.jpg,meningioma,meningioma,90.47,True
+meningioma/m3 (212).jpg,meningioma,meningioma,66.79,True
+meningioma/Tr-me_1235.jpg,meningioma,meningioma,94.06,True
+meningioma/Tr-me_497.jpg,meningioma,notumor,80.1,False
+meningioma/Tr-me_718.jpg,meningioma,meningioma,91.67,True
+meningioma/m (19).jpg,meningioma,meningioma,95.93,True
+meningioma/m1(14).jpg,meningioma,meningioma,78.78,True
+meningioma/Tr-me_1037.jpg,meningioma,meningioma,93.65,True
+meningioma/Tr-me_1148.jpg,meningioma,glioma,61.19,False
+meningioma/Tr-me_526.jpg,meningioma,meningioma,98.5,True
+meningioma/Tr-aug-me_12.jpg,meningioma,pituitary,54.92,False
+meningioma/m2 (40).jpg,meningioma,meningioma,99.89,True
+meningioma/Tr-me_1237.jpg,meningioma,meningioma,94.1,True
+meningioma/Tr-me_696.jpg,meningioma,meningioma,98.94,True
+meningioma/Tr-me_933.jpg,meningioma,glioma,68.85,False
+meningioma/Tr-me_1035.jpg,meningioma,meningioma,97.79,True
+meningioma/m2 (145).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1261.jpg,meningioma,meningioma,55.85,True
+meningioma/m1(121).jpg,meningioma,pituitary,54.04,False
+meningioma/Tr-me_351.jpg,meningioma,meningioma,91.35,True
+meningioma/Tr-aug-me_32.jpg,meningioma,meningioma,95.42,True
+meningioma/Tr-me_182.jpg,meningioma,meningioma,99.97,True
+meningioma/Tr-me_913.jpg,meningioma,meningioma,100.0,True
+meningioma/m1(50).jpg,meningioma,meningioma,71.04,True
+meningioma/m (12).jpg,meningioma,meningioma,72.38,True
+meningioma/m3 (102).jpg,meningioma,meningioma,100.0,True
+meningioma/m1(35).jpg,meningioma,meningioma,93.94,True
+meningioma/Tr-me_1136.jpg,meningioma,meningioma,96.13,True
+meningioma/m2 (47).jpg,meningioma,meningioma,99.08,True
+meningioma/Tr-me_604.jpg,meningioma,meningioma,99.77,True
+meningioma/Tr-me_875.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1254.jpg,meningioma,meningioma,99.79,True
+meningioma/m3 (187).jpg,meningioma,meningioma,91.24,True
+meningioma/Tr-me_1239.jpg,meningioma,meningioma,99.44,True
+meningioma/Tr-me_248.jpg,meningioma,meningioma,92.0,True
+meningioma/Tr-me_419.jpg,meningioma,meningioma,98.59,True
+meningioma/Tr-me_77.jpg,meningioma,meningioma,89.16,True
+meningioma/m2 (90).jpg,meningioma,meningioma,98.63,True
+meningioma/Tr-me_708.jpg,meningioma,meningioma,98.07,True
+meningioma/m1(77).jpg,meningioma,meningioma,62.13,True
+meningioma/Tr-me_1185.jpg,meningioma,meningioma,97.06,True
+meningioma/Tr-me_1131.jpg,meningioma,meningioma,100.0,True
+meningioma/m (137).jpg,meningioma,meningioma,100.0,True
+meningioma/m (145).jpg,meningioma,meningioma,95.54,True
+meningioma/Tr-me_1253.jpg,meningioma,meningioma,88.5,True
+meningioma/Tr-me_288.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-aug-me_62.jpg,meningioma,meningioma,78.88,True
+meningioma/Tr-me_777.jpg,meningioma,meningioma,98.59,True
+meningioma/m2 (29).jpg,meningioma,meningioma,99.66,True
+meningioma/Tr-me_997.jpg,meningioma,meningioma,99.86,True
+meningioma/m2 (75).jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_771.jpg,meningioma,meningioma,83.59,True
+meningioma/m3 (188).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_238.jpg,meningioma,meningioma,99.98,True
+meningioma/m (20).jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_1113.jpg,meningioma,meningioma,99.76,True
+meningioma/Tr-me_172.jpg,meningioma,meningioma,99.53,True
+meningioma/m1(102).jpg,meningioma,meningioma,81.23,True
+meningioma/Tr-me_635.jpg,meningioma,meningioma,98.31,True
+meningioma/Tr-me_321.jpg,meningioma,meningioma,66.97,True
+meningioma/m3 (177).jpg,meningioma,meningioma,98.84,True
+meningioma/m (168).jpg,meningioma,meningioma,97.75,True
+meningioma/m1(63).jpg,meningioma,meningioma,72.2,True
+meningioma/m (8).jpg,meningioma,meningioma,87.36,True
+meningioma/Tr-aug-me_83.jpg,meningioma,meningioma,64.71,True
+meningioma/Tr-me_1004.jpg,meningioma,meningioma,97.91,True
+meningioma/Tr-me_438.jpg,meningioma,meningioma,70.8,True
+meningioma/Tr-me_491.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_676.jpg,meningioma,meningioma,99.75,True
+meningioma/m3 (150).jpg,meningioma,meningioma,98.55,True
+meningioma/Tr-me_699.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_85.jpg,meningioma,meningioma,85.15,True
+meningioma/Tr-me_192.jpg,meningioma,meningioma,99.23,True
+meningioma/Tr-aug-me_86.jpg,meningioma,meningioma,99.97,True
+meningioma/Tr-me_408.jpg,meningioma,meningioma,99.74,True
+meningioma/Tr-me_989.jpg,meningioma,meningioma,97.57,True
+meningioma/Tr-me_1112.jpg,meningioma,meningioma,86.87,True
+meningioma/m1(128).jpg,meningioma,meningioma,52.84,True
+meningioma/Tr-me_615.jpg,meningioma,meningioma,98.31,True
+meningioma/m1(190).jpg,meningioma,notumor,57.47,False
+meningioma/Tr-aug-me_100.jpg,meningioma,meningioma,99.88,True
+meningioma/Tr-me_863.jpg,meningioma,meningioma,76.47,True
+meningioma/Tr-me_633.jpg,meningioma,meningioma,82.03,True
+meningioma/Tr-aug-me_36.jpg,meningioma,meningioma,94.1,True
+meningioma/m2 (153).jpg,meningioma,meningioma,99.99,True
+meningioma/Tr-me_1241.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-me_104.jpg,meningioma,meningioma,100.0,True
+meningioma/Tr-aug-me_96.jpg,meningioma,meningioma,100.0,True
+meningioma/m2 (148).jpg,meningioma,meningioma,96.04,True
+meningioma/Tr-me_1073.jpg,meningioma,meningioma,98.82,True
+meningioma/Tr-me_25.jpg,meningioma,meningioma,99.76,True
+meningioma/m (80).jpg,meningioma,glioma,76.74,False
+meningioma/Tr-me_1101.jpg,meningioma,meningioma,98.63,True
+meningioma/Tr-me_524.jpg,meningioma,meningioma,96.87,True
+meningioma/Tr-me_632.jpg,meningioma,meningioma,69.77,True
+meningioma/Tr-me_864.jpg,meningioma,meningioma,98.3,True
+notumor/image(262).jpg,notumor,notumor,77.26,True
+notumor/Tr-no_1303.jpg,notumor,notumor,99.35,True
+notumor/Tr-no_928.jpg,notumor,notumor,99.93,True
+notumor/image (44).jpg,notumor,notumor,99.5,True
+notumor/Tr-no_807.jpg,notumor,notumor,100.0,True
+notumor/Tr-no_589.jpg,notumor,notumor,99.98,True
+notumor/image(193).jpg,notumor,notumor,99.96,True
+notumor/image(105).jpg,notumor,notumor,93.16,True
+notumor/Tr-no_1028.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_1367.jpg,notumor,notumor,97.95,True
+notumor/Tr-no_1011.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_720.jpg,notumor,notumor,99.63,True
+notumor/Tr-no_115.jpg,notumor,notumor,93.2,True
+notumor/6.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_1334.jpg,notumor,notumor,98.88,True
+notumor/Tr-no_263.jpg,notumor,notumor,99.58,True
+notumor/Tr-no_21.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_1358.jpg,notumor,notumor,96.52,True
+notumor/image.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_1047.jpg,notumor,notumor,99.81,True
+notumor/image (19).jpg,notumor,notumor,99.84,True
+notumor/Tr-no_936.jpg,notumor,notumor,99.87,True
+notumor/Tr-no_845.jpg,notumor,notumor,99.67,True
+notumor/Tr-no_948.jpg,notumor,notumor,99.95,True
+notumor/Tr-no_136.jpg,notumor,notumor,98.66,True
+notumor/Tr-no_958.jpg,notumor,notumor,99.45,True
+notumor/Tr-no_35.jpg,notumor,notumor,99.98,True
+notumor/image(40).jpg,notumor,notumor,99.2,True
+notumor/Tr-no_908.jpg,notumor,notumor,99.56,True
+notumor/Tr-no_1130.jpg,notumor,notumor,75.78,True
+notumor/Tr-no_220.jpg,notumor,notumor,98.42,True
+notumor/Tr-no_510.jpg,notumor,meningioma,54.39,False
+notumor/Tr-no_450.jpg,notumor,notumor,99.69,True
+notumor/image(160).jpg,notumor,notumor,98.72,True
+notumor/Tr-no_106.jpg,notumor,notumor,59.54,True
+notumor/Tr-no_381.jpg,notumor,notumor,99.59,True
+notumor/Tr-no_926.jpg,notumor,notumor,93.12,True
+notumor/Tr-no_363.jpg,notumor,notumor,95.58,True
+notumor/image(290).jpg,notumor,notumor,99.85,True
+notumor/image(251).jpg,notumor,notumor,78.94,True
+notumor/Tr-no_1287.jpg,notumor,notumor,100.0,True
+notumor/Tr-no_611.jpg,notumor,notumor,99.88,True
+notumor/Tr-no_850.jpg,notumor,notumor,99.36,True
+notumor/Tr-no_112.jpg,notumor,notumor,99.93,True
+notumor/Tr-no_117.jpg,notumor,notumor,98.73,True
+notumor/Tr-no_805.jpg,notumor,notumor,99.94,True
+notumor/Tr-no_1169.jpg,notumor,notumor,99.5,True
+notumor/image(17).jpg,notumor,notumor,99.97,True
+notumor/Tr-no_508.jpg,notumor,notumor,99.04,True
+notumor/image(279).jpg,notumor,notumor,99.85,True
+notumor/Tr-no_375.jpg,notumor,notumor,99.59,True
+notumor/Tr-no_378.jpg,notumor,notumor,99.76,True
+notumor/Tr-no_1176.jpg,notumor,notumor,98.82,True
+notumor/Tr-no_46.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_77.jpg,notumor,notumor,99.53,True
+notumor/Tr-no_1202.jpg,notumor,notumor,100.0,True
+notumor/Tr-no_624.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_405.jpg,notumor,notumor,88.87,True
+notumor/Tr-no_1190.jpg,notumor,notumor,99.9,True
+notumor/Tr-no_1043.jpg,notumor,notumor,99.08,True
+notumor/Tr-no_461.jpg,notumor,notumor,99.42,True
+notumor/image (45).jpg,notumor,notumor,98.78,True
+notumor/Tr-no_771.jpg,notumor,notumor,96.01,True
+notumor/Tr-no_1061.jpg,notumor,notumor,99.48,True
+notumor/image(229).jpg,notumor,notumor,91.74,True
+notumor/Tr-no_455.jpg,notumor,notumor,99.59,True
+notumor/Tr-no_1090.jpg,notumor,notumor,91.74,True
+notumor/image(61).jpg,notumor,notumor,99.29,True
+notumor/Tr-no_745.jpg,notumor,notumor,98.35,True
+notumor/Tr-no_1.jpg,notumor,notumor,99.87,True
+notumor/Tr-no_1131.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_815.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_959.jpg,notumor,notumor,86.95,True
+notumor/Tr-no_1377.jpg,notumor,notumor,99.3,True
+notumor/image(277).jpg,notumor,notumor,99.83,True
+notumor/Tr-no_1121.jpg,notumor,notumor,99.93,True
+notumor/Tr-no_924.jpg,notumor,notumor,99.56,True
+notumor/Tr-no_97.jpg,notumor,notumor,97.49,True
+notumor/image (11).jpg,notumor,notumor,99.68,True
+notumor/image (7).jpg,notumor,notumor,99.84,True
+notumor/Tr-no_69.jpg,notumor,notumor,99.88,True
+notumor/Tr-no_965.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_360.jpg,notumor,notumor,99.81,True
+notumor/Tr-no_904.jpg,notumor,notumor,99.85,True
+notumor/image (40).jpg,notumor,notumor,99.97,True
+notumor/Tr-no_291.jpg,notumor,notumor,99.73,True
+notumor/Tr-no_769.jpg,notumor,notumor,99.67,True
+notumor/Tr-no_205.jpg,notumor,notumor,98.8,True
+notumor/Tr-no_58.jpg,notumor,notumor,99.84,True
+notumor/Tr-no_1237.jpg,notumor,notumor,99.89,True
+notumor/image(43).jpg,notumor,notumor,79.21,True
+notumor/Tr-no_827.jpg,notumor,notumor,95.83,True
+notumor/image(145).jpg,notumor,notumor,99.75,True
+notumor/Tr-no_124.jpg,notumor,notumor,99.9,True
+notumor/Tr-no_1233.jpg,notumor,notumor,99.24,True
+notumor/Tr-no_1052.jpg,notumor,notumor,99.69,True
+notumor/image(299).jpg,notumor,notumor,99.71,True
+notumor/Tr-no_817.jpg,notumor,notumor,99.42,True
+notumor/Tr-no_1374.jpg,notumor,notumor,99.55,True
+notumor/Tr-no_1082.jpg,notumor,notumor,99.47,True
+notumor/Tr-no_85.jpg,notumor,notumor,99.93,True
+notumor/Tr-no_990.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_967.jpg,notumor,notumor,96.93,True
+notumor/Tr-no_237.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_366.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_1295.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_1105.jpg,notumor,notumor,93.37,True
+notumor/Tr-no_1088.jpg,notumor,notumor,99.82,True
+notumor/image(35).jpg,notumor,notumor,82.05,True
+notumor/Tr-no_1027.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_457.jpg,notumor,notumor,99.44,True
+notumor/image (63).jpg,notumor,notumor,99.99,True
+notumor/image(316).jpg,notumor,notumor,94.08,True
+notumor/image (34).jpg,notumor,notumor,99.96,True
+notumor/Tr-no_385.jpg,notumor,notumor,99.72,True
+notumor/Tr-no_901.jpg,notumor,notumor,88.65,True
+notumor/Tr-no_749.jpg,notumor,notumor,99.85,True
+notumor/image(81).jpg,notumor,notumor,99.3,True
+notumor/Tr-no_529.jpg,notumor,notumor,99.98,True
+notumor/image(9).jpg,notumor,notumor,99.96,True
+notumor/Tr-no_843.jpg,notumor,notumor,99.75,True
+notumor/Tr-no_502.jpg,notumor,notumor,99.71,True
+notumor/Tr-no_372.jpg,notumor,notumor,72.67,True
+notumor/Tr-no_629.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_1342.jpg,notumor,notumor,99.75,True
+notumor/image(304).jpg,notumor,notumor,99.7,True
+notumor/Tr-no_600.jpg,notumor,notumor,99.9,True
+notumor/Tr-no_328.jpg,notumor,notumor,99.78,True
+notumor/Tr-no_111.jpg,notumor,notumor,100.0,True
+notumor/Tr-no_757.jpg,notumor,notumor,99.97,True
+notumor/image (60).jpg,notumor,notumor,85.99,True
+notumor/Tr-no_1026.jpg,notumor,notumor,88.73,True
+notumor/Tr-no_1338.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_495.jpg,notumor,notumor,99.05,True
+notumor/Tr-no_1111.jpg,notumor,notumor,98.78,True
+notumor/Tr-no_770.jpg,notumor,notumor,93.15,True
+notumor/Tr-no_993.jpg,notumor,notumor,85.72,True
+notumor/Tr-no_1046.jpg,notumor,notumor,99.69,True
+notumor/Tr-no_864.jpg,notumor,notumor,99.74,True
+notumor/Tr-no_685.jpg,notumor,notumor,99.75,True
+notumor/Tr-no_744.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_810.jpg,notumor,notumor,99.57,True
+notumor/Tr-no_796.jpg,notumor,notumor,99.83,True
+notumor/Tr-no_289.jpg,notumor,notumor,99.49,True
+notumor/Tr-no_576.jpg,notumor,notumor,99.99,True
+notumor/image(147).jpg,notumor,notumor,99.95,True
+notumor/Tr-no_184.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_633.jpg,notumor,notumor,99.31,True
+notumor/Tr-no_147.jpg,notumor,notumor,86.8,True
+notumor/Tr-no_1133.jpg,notumor,notumor,99.59,True
+notumor/image(2).jpg,notumor,notumor,99.88,True
+notumor/Tr-no_159.jpg,notumor,notumor,99.8,True
+notumor/image(15).jpg,notumor,notumor,97.76,True
+notumor/Tr-no_511.jpg,notumor,notumor,99.91,True
+notumor/Tr-no_1064.jpg,notumor,notumor,98.75,True
+notumor/image (25).jpg,notumor,notumor,72.43,True
+notumor/Tr-no_219.jpg,notumor,notumor,99.71,True
+notumor/Tr-no_329.jpg,notumor,notumor,99.38,True
+notumor/Tr-no_1209.jpg,notumor,notumor,99.44,True
+notumor/Tr-no_1225.jpg,notumor,notumor,99.12,True
+notumor/Tr-no_236.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_181.jpg,notumor,notumor,99.84,True
+notumor/Tr-no_547.jpg,notumor,notumor,99.84,True
+notumor/image(314).jpg,notumor,notumor,99.3,True
+notumor/Tr-no_1262.jpg,notumor,notumor,90.05,True
+notumor/Tr-no_1298.jpg,notumor,notumor,99.94,True
+notumor/image(237).jpg,notumor,notumor,96.4,True
+notumor/Tr-no_414.jpg,notumor,notumor,99.72,True
+notumor/Tr-no_1099.jpg,notumor,notumor,100.0,True
+notumor/3.jpg,notumor,notumor,84.18,True
+notumor/Tr-no_387.jpg,notumor,notumor,98.72,True
+notumor/Tr-no_999.jpg,notumor,notumor,99.76,True
+notumor/Tr-no_998.jpg,notumor,notumor,93.6,True
+notumor/Tr-no_1004.jpg,notumor,notumor,99.99,True
+notumor/image(288).jpg,notumor,notumor,99.92,True
+notumor/image(125).jpg,notumor,notumor,99.94,True
+notumor/image(289).jpg,notumor,notumor,94.13,True
+notumor/Tr-no_121.jpg,notumor,notumor,99.34,True
+notumor/Tr-no_51.jpg,notumor,notumor,96.63,True
+notumor/Tr-no_1382.jpg,notumor,notumor,60.39,True
+notumor/Tr-no_985.jpg,notumor,notumor,99.61,True
+notumor/Tr-no_594.jpg,notumor,notumor,99.5,True
+notumor/Tr-no_209.jpg,notumor,notumor,97.57,True
+notumor/image(72).jpg,notumor,notumor,100.0,True
+notumor/Tr-no_409.jpg,notumor,notumor,99.95,True
+notumor/Tr-no_562.jpg,notumor,notumor,95.62,True
+notumor/Tr-no_949.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_84.jpg,notumor,notumor,99.73,True
+notumor/Tr-no_398.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_918.jpg,notumor,notumor,84.18,True
+notumor/image(190).jpg,notumor,notumor,99.48,True
+notumor/Tr-no_1244.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_512.jpg,notumor,notumor,95.66,True
+notumor/Tr-no_114.jpg,notumor,notumor,99.86,True
+notumor/image(37).jpg,notumor,notumor,86.95,True
+notumor/image(275).jpg,notumor,notumor,99.71,True
+notumor/Tr-no_612.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_1167.jpg,notumor,notumor,99.88,True
+notumor/Tr-no_717.jpg,notumor,notumor,99.45,True
+notumor/Tr-no_256.jpg,notumor,notumor,98.82,True
+notumor/Tr-no_501.jpg,notumor,notumor,99.62,True
+notumor/Tr-no_1039.jpg,notumor,notumor,99.9,True
+notumor/Tr-no_798.jpg,notumor,notumor,92.86,True
+notumor/image(142).jpg,notumor,notumor,95.28,True
+notumor/Tr-no_676.jpg,notumor,notumor,99.93,True
+notumor/image(199).jpg,notumor,notumor,97.74,True
+notumor/Tr-no_534.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_1350.jpg,notumor,notumor,98.19,True
+notumor/Tr-no_1161.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_7.jpg,notumor,notumor,99.64,True
+notumor/Tr-no_1278.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_653.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_780.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_680.jpg,notumor,notumor,99.86,True
+notumor/Tr-no_584.jpg,notumor,notumor,99.69,True
+notumor/image(176).jpg,notumor,notumor,99.92,True
+notumor/Tr-no_620.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_1035.jpg,notumor,notumor,99.86,True
+notumor/image(240).jpg,notumor,notumor,99.89,True
+notumor/image(302).jpg,notumor,notumor,99.71,True
+notumor/Tr-no_701.jpg,notumor,notumor,99.95,True
+notumor/Tr-no_622.jpg,notumor,notumor,99.81,True
+notumor/Tr-no_689.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_565.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_873.jpg,notumor,notumor,99.51,True
+notumor/Tr-no_191.jpg,notumor,notumor,99.36,True
+notumor/image(38).jpg,notumor,notumor,99.95,True
+notumor/Tr-no_1313.jpg,notumor,notumor,99.47,True
+notumor/Tr-no_1222.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_1030.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_733.jpg,notumor,notumor,99.89,True
+notumor/Tr-no_1240.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_687.jpg,notumor,notumor,98.93,True
+notumor/Tr-no_806.jpg,notumor,notumor,97.07,True
+notumor/Tr-no_818.jpg,notumor,notumor,99.32,True
+notumor/Tr-no_317.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_741.jpg,notumor,notumor,98.55,True
+notumor/Tr-no_1364.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_916.jpg,notumor,notumor,99.65,True
+notumor/image(222).jpg,notumor,notumor,99.29,True
+notumor/Tr-no_470.jpg,notumor,notumor,98.77,True
+notumor/Tr-no_214.jpg,notumor,notumor,99.7,True
+notumor/Tr-no_1038.jpg,notumor,notumor,99.94,True
+notumor/Tr-no_945.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_921.jpg,notumor,notumor,98.09,True
+notumor/Tr-no_1255.jpg,notumor,notumor,99.39,True
+notumor/Tr-no_338.jpg,notumor,notumor,98.72,True
+notumor/Tr-no_1075.jpg,notumor,notumor,98.63,True
+notumor/image (12).jpg,notumor,notumor,71.41,True
+notumor/Tr-no_665.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_122.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_494.jpg,notumor,notumor,99.93,True
+notumor/Tr-no_1042.jpg,notumor,notumor,53.62,True
+notumor/Tr-no_992.jpg,notumor,notumor,92.14,True
+notumor/Tr-no_1207.jpg,notumor,notumor,98.15,True
+notumor/image (31).jpg,notumor,notumor,99.99,True
+notumor/Tr-no_471.jpg,notumor,notumor,99.97,True
+notumor/image(4).jpg,notumor,notumor,98.35,True
+notumor/Tr-no_168.jpg,notumor,notumor,95.28,True
+notumor/Tr-no_1172.jpg,notumor,pituitary,69.34,False
+notumor/image(265).jpg,notumor,notumor,89.04,True
+notumor/Tr-no_885.jpg,notumor,notumor,99.55,True
+notumor/image(76).jpg,notumor,notumor,99.93,True
+notumor/Tr-no_844.jpg,notumor,notumor,99.82,True
+notumor/Tr-no_934.jpg,notumor,notumor,99.97,True
+notumor/Tr-no_1051.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_1294.jpg,notumor,notumor,97.83,True
+notumor/Tr-no_933.jpg,notumor,notumor,96.39,True
+notumor/Tr-no_1044.jpg,notumor,notumor,99.59,True
+notumor/Tr-no_371.jpg,notumor,notumor,99.86,True
+notumor/Tr-no_1270.jpg,notumor,notumor,99.99,True
+notumor/image(225).jpg,notumor,notumor,86.95,True
+notumor/Tr-no_922.jpg,notumor,notumor,99.96,True
+notumor/image (36).jpg,notumor,notumor,99.91,True
+notumor/image(22).jpg,notumor,notumor,99.89,True
+notumor/image(271).jpg,notumor,notumor,98.78,True
+notumor/Tr-no_571.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_158.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_554.jpg,notumor,notumor,99.93,True
+notumor/image(87).jpg,notumor,notumor,99.64,True
+notumor/image(24).jpg,notumor,notumor,83.12,True
+notumor/Tr-no_272.jpg,notumor,notumor,99.8,True
+notumor/Tr-no_1153.jpg,notumor,notumor,99.35,True
+notumor/Tr-no_1073.jpg,notumor,notumor,96.56,True
+notumor/Tr-no_1126.jpg,notumor,notumor,99.67,True
+notumor/Tr-no_979.jpg,notumor,notumor,99.96,True
+notumor/Tr-no_222.jpg,notumor,notumor,99.94,True
+notumor/Tr-no_1095.jpg,notumor,notumor,99.88,True
+notumor/Tr-no_326.jpg,notumor,notumor,99.42,True
+notumor/image (15).jpg,notumor,notumor,99.9,True
+notumor/Tr-no_824.jpg,notumor,notumor,69.55,True
+notumor/Tr-no_188.jpg,notumor,notumor,99.74,True
+notumor/Tr-no_650.jpg,notumor,notumor,99.05,True
+notumor/Tr-no_1353.jpg,notumor,notumor,90.0,True
+notumor/image(259).jpg,notumor,notumor,99.66,True
+notumor/image(42).jpg,notumor,notumor,83.12,True
+notumor/image(48).jpg,notumor,notumor,98.29,True
+notumor/Tr-no_1031.jpg,notumor,notumor,99.3,True
+notumor/Tr-no_382.jpg,notumor,notumor,98.75,True
+notumor/Tr-no_614.jpg,notumor,notumor,99.97,True
+notumor/image (38).jpg,notumor,notumor,98.6,True
+notumor/image(285).jpg,notumor,notumor,98.88,True
+notumor/Tr-no_690.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_118.jpg,notumor,notumor,99.37,True
+notumor/Tr-no_898.jpg,notumor,notumor,99.85,True
+notumor/Tr-no_968.jpg,notumor,notumor,97.32,True
+notumor/Tr-no_459.jpg,notumor,notumor,88.46,True
+notumor/image(254).jpg,notumor,notumor,88.93,True
+notumor/Tr-no_59.jpg,notumor,notumor,92.6,True
+notumor/image(51).jpg,notumor,notumor,99.1,True
+notumor/Tr-no_891.jpg,notumor,notumor,99.95,True
+notumor/Tr-no_140.jpg,notumor,notumor,99.94,True
+notumor/image (27).jpg,notumor,notumor,99.57,True
+notumor/Tr-no_631.jpg,notumor,notumor,91.62,True
+notumor/Tr-no_341.jpg,notumor,notumor,98.59,True
+notumor/Tr-no_276.jpg,notumor,notumor,98.98,True
+notumor/image(12).jpg,notumor,notumor,49.51,True
+notumor/Tr-no_74.jpg,notumor,notumor,99.41,True
+notumor/image(62).jpg,notumor,notumor,52.1,True
+notumor/Tr-no_472.jpg,notumor,notumor,93.8,True
+notumor/image(80).jpg,notumor,notumor,99.85,True
+notumor/Tr-no_957.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_728.jpg,notumor,notumor,98.93,True
+notumor/image(50).jpg,notumor,notumor,99.96,True
+notumor/image (37).jpg,notumor,notumor,98.59,True
+notumor/image(188).jpg,notumor,notumor,99.98,True
+notumor/Tr-no_1258.jpg,notumor,notumor,99.92,True
+notumor/Tr-no_193.jpg,notumor,notumor,99.9,True
+notumor/Tr-no_975.jpg,notumor,notumor,99.02,True
+notumor/image(113).jpg,notumor,notumor,97.21,True
+notumor/image(63).jpg,notumor,notumor,99.89,True
+notumor/Tr-no_1179.jpg,notumor,notumor,99.85,True
+notumor/Tr-no_787.jpg,notumor,notumor,99.44,True
+notumor/Tr-no_853.jpg,notumor,notumor,99.91,True
+notumor/image(303).jpg,notumor,notumor,98.25,True
+notumor/Tr-no_1326.jpg,notumor,notumor,72.43,True
+notumor/image(200).jpg,notumor,notumor,99.55,True
+notumor/image(46).jpg,notumor,notumor,99.99,True
+notumor/Tr-no_14.jpg,notumor,notumor,99.84,True
+notumor/Tr-no_430.jpg,notumor,notumor,99.58,True
+notumor/Tr-no_1335.jpg,notumor,notumor,99.99,True
+notumor/image(323).jpg,notumor,notumor,95.49,True
+notumor/Tr-no_228.jpg,notumor,notumor,99.98,True
+notumor/Tr-no_1074.jpg,notumor,notumor,99.44,True
+notumor/2.jpg,notumor,notumor,74.82,True
+notumor/Tr-no_1067.jpg,notumor,notumor,96.84,True
+notumor/Tr-no_946.jpg,notumor,notumor,82.05,True
+notumor/Tr-no_197.jpg,notumor,notumor,97.67,True
+notumor/Tr-no_997.jpg,notumor,notumor,99.93,True
+notumor/Tr-no_286.jpg,notumor,notumor,99.65,True
+notumor/Tr-no_198.jpg,notumor,notumor,99.91,True
+notumor/Tr-no_477.jpg,notumor,notumor,98.85,True
+notumor/image(171).jpg,notumor,notumor,99.98,True
+notumor/Tr-no_1301.jpg,notumor,notumor,98.24,True
+notumor/Tr-no_705.jpg,notumor,notumor,96.88,True
+notumor/Tr-no_755.jpg,notumor,notumor,99.99,True
+notumor/Tr-no_1231.jpg,notumor,notumor,99.71,True
+notumor/image(32).jpg,notumor,notumor,87.17,True
+notumor/Tr-no_616.jpg,notumor,notumor,92.61,True
+pituitary/Tr-pi_1111.jpg,pituitary,pituitary,81.06,True
+pituitary/Tr-pi_1297.jpg,pituitary,pituitary,98.43,True
+pituitary/Tr-pi_1318.jpg,pituitary,pituitary,98.63,True
+pituitary/Tr-pi_505.jpg,pituitary,pituitary,94.86,True
+pituitary/Tr-pi_731.jpg,pituitary,pituitary,99.29,True
+pituitary/p (12).jpg,pituitary,pituitary,97.57,True
+pituitary/p (164).jpg,pituitary,pituitary,98.9,True
+pituitary/p (272).jpg,pituitary,pituitary,94.15,True
+pituitary/Tr-pi_305.jpg,pituitary,pituitary,99.43,True
+pituitary/p (805).jpg,pituitary,pituitary,99.23,True
+pituitary/Tr-pi_1082.jpg,pituitary,pituitary,97.35,True
+pituitary/Tr-pi_555.jpg,pituitary,pituitary,95.79,True
+pituitary/Tr-pi_1330.jpg,pituitary,pituitary,99.46,True
+pituitary/Tr-pi_69.jpg,pituitary,pituitary,99.05,True
+pituitary/Tr-pi_709.jpg,pituitary,pituitary,99.23,True
+pituitary/Tr-pi_149.jpg,pituitary,pituitary,98.55,True
+pituitary/p (153).jpg,pituitary,pituitary,98.3,True
+pituitary/p (98).jpg,pituitary,pituitary,95.6,True
+pituitary/p (699).jpg,pituitary,pituitary,99.46,True
+pituitary/p (485).jpg,pituitary,pituitary,97.73,True
+pituitary/p (365).jpg,pituitary,pituitary,98.89,True
+pituitary/Tr-pi_724.jpg,pituitary,pituitary,98.39,True
+pituitary/Tr-pi_447.jpg,pituitary,pituitary,98.39,True
+pituitary/p (144).jpg,pituitary,pituitary,98.19,True
+pituitary/p (402).jpg,pituitary,pituitary,97.21,True
+pituitary/Tr-pi_968.jpg,pituitary,pituitary,93.56,True
+pituitary/Tr-pi_42.jpg,pituitary,pituitary,83.82,True
+pituitary/p (757).jpg,pituitary,pituitary,97.55,True
+pituitary/p (751).jpg,pituitary,pituitary,96.68,True
+pituitary/Tr-pi_37.jpg,pituitary,pituitary,68.17,True
+pituitary/p (585).jpg,pituitary,pituitary,80.99,True
+pituitary/Tr-pi_970.jpg,pituitary,pituitary,84.36,True
+pituitary/Tr-pi_1025.jpg,pituitary,pituitary,73.76,True
+pituitary/Tr-pi_1374.jpg,pituitary,pituitary,81.94,True
+pituitary/Tr-pi_565.jpg,pituitary,pituitary,98.99,True
+pituitary/Tr-pi_384.jpg,pituitary,pituitary,72.28,True
+pituitary/p (10).jpg,pituitary,pituitary,99.64,True
+pituitary/Tr-pi_50.jpg,pituitary,pituitary,91.23,True
+pituitary/p (20).jpg,pituitary,pituitary,86.07,True
+pituitary/Tr-pi_895.jpg,pituitary,pituitary,95.99,True
+pituitary/p (415).jpg,pituitary,pituitary,99.47,True
+pituitary/p (305).jpg,pituitary,pituitary,98.68,True
+pituitary/Tr-pi_1380.jpg,pituitary,pituitary,72.91,True
+pituitary/p (703).jpg,pituitary,pituitary,97.96,True
+pituitary/Tr-pi_582.jpg,pituitary,pituitary,97.03,True
+pituitary/Tr-pi_84.jpg,pituitary,pituitary,99.66,True
+pituitary/Tr-pi_451.jpg,pituitary,pituitary,99.3,True
+pituitary/Tr-pi_920.jpg,pituitary,pituitary,66.97,True
+pituitary/p (457).jpg,pituitary,pituitary,99.28,True
+pituitary/p (728).jpg,pituitary,pituitary,98.41,True
+pituitary/p (411).jpg,pituitary,pituitary,97.86,True
+pituitary/Tr-pi_908.jpg,pituitary,pituitary,96.63,True
+pituitary/p (407).jpg,pituitary,pituitary,99.44,True
+pituitary/Tr-pi_1167.jpg,pituitary,pituitary,90.62,True
+pituitary/Tr-pi_325.jpg,pituitary,pituitary,98.07,True
+pituitary/Tr-pi_815.jpg,pituitary,pituitary,95.78,True
+pituitary/Tr-pi_1130.jpg,pituitary,pituitary,98.65,True
+pituitary/p (473).jpg,pituitary,pituitary,97.27,True
+pituitary/p (238).jpg,pituitary,pituitary,99.5,True
+pituitary/p (254).jpg,pituitary,pituitary,99.81,True
+pituitary/Tr-pi_226.jpg,pituitary,pituitary,99.42,True
+pituitary/Tr-pi_1033.jpg,pituitary,pituitary,98.61,True
+pituitary/Tr-pi_1096.jpg,pituitary,pituitary,93.84,True
+pituitary/Tr-pi_531.jpg,pituitary,pituitary,99.45,True
+pituitary/Tr-pi_511.jpg,pituitary,pituitary,99.73,True
+pituitary/Tr-pi_92.jpg,pituitary,pituitary,94.1,True
+pituitary/p (177).jpg,pituitary,pituitary,33.5,True
+pituitary/Tr-pi_8.jpg,pituitary,pituitary,98.54,True
+pituitary/p (546).jpg,pituitary,pituitary,66.97,True
+pituitary/Tr-pi_659.jpg,pituitary,pituitary,99.24,True
+pituitary/Tr-pi_266.jpg,pituitary,pituitary,99.34,True
+pituitary/Tr-pi_913.jpg,pituitary,pituitary,99.44,True
+pituitary/p (824).jpg,pituitary,pituitary,96.15,True
+pituitary/Tr-pi_258.jpg,pituitary,pituitary,54.0,True
+pituitary/p (280).jpg,pituitary,pituitary,99.2,True
+pituitary/p (636).jpg,pituitary,pituitary,99.68,True
+pituitary/p (779).jpg,pituitary,pituitary,98.99,True
+pituitary/p (190).jpg,pituitary,pituitary,84.26,True
+pituitary/Tr-pi_976.jpg,pituitary,pituitary,96.71,True
+pituitary/p (807).jpg,pituitary,pituitary,98.77,True
+pituitary/p (661).jpg,pituitary,pituitary,54.69,True
+pituitary/p (537).jpg,pituitary,pituitary,86.7,True
+pituitary/Tr-pi_607.jpg,pituitary,pituitary,99.53,True
+pituitary/p (769).jpg,pituitary,pituitary,99.68,True
+pituitary/p (580).jpg,pituitary,pituitary,92.73,True
+pituitary/Tr-pi_552.jpg,pituitary,pituitary,97.25,True
+pituitary/p (376).jpg,pituitary,pituitary,97.56,True
+pituitary/p (32).jpg,pituitary,pituitary,90.77,True
+pituitary/p (4).jpg,pituitary,pituitary,96.32,True
+pituitary/Tr-pi_75.jpg,pituitary,pituitary,99.97,True
+pituitary/p (616).jpg,pituitary,pituitary,99.69,True
+pituitary/p (771).jpg,pituitary,pituitary,96.99,True
+pituitary/Tr-pi_1371.jpg,pituitary,pituitary,96.1,True
+pituitary/Tr-pi_106.jpg,pituitary,pituitary,98.98,True
+pituitary/p (336).jpg,pituitary,pituitary,83.44,True
+pituitary/Tr-pi_263.jpg,pituitary,pituitary,95.6,True
+pituitary/p (103).jpg,pituitary,pituitary,90.53,True
+pituitary/Tr-pi_533.jpg,pituitary,pituitary,99.77,True
+pituitary/Tr-pi_811.jpg,pituitary,pituitary,98.43,True
+pituitary/Tr-pi_567.jpg,pituitary,pituitary,98.59,True
+pituitary/Tr-pi_728.jpg,pituitary,pituitary,99.37,True
+pituitary/Tr-pi_1240.jpg,pituitary,pituitary,99.62,True
+pituitary/Tr-pi_1223.jpg,pituitary,pituitary,98.64,True
+pituitary/Tr-pi_664.jpg,pituitary,pituitary,88.62,True
+pituitary/Tr-pi_286.jpg,pituitary,pituitary,83.1,True
+pituitary/Tr-pi_687.jpg,pituitary,pituitary,98.44,True
+pituitary/Tr-pi_650.jpg,pituitary,pituitary,92.04,True
+pituitary/p (127).jpg,pituitary,pituitary,94.36,True
+pituitary/p (825).jpg,pituitary,pituitary,97.77,True
+pituitary/Tr-pi_524.jpg,pituitary,pituitary,81.45,True
+pituitary/p (506).jpg,pituitary,pituitary,81.93,True
+pituitary/Tr-pi_187.jpg,pituitary,pituitary,99.28,True
+pituitary/p (576).jpg,pituitary,pituitary,96.88,True
+pituitary/p (207).jpg,pituitary,pituitary,98.64,True
+pituitary/Tr-pi_164.jpg,pituitary,pituitary,84.92,True
+pituitary/Tr-pi_766.jpg,pituitary,pituitary,97.26,True
+pituitary/p (545).jpg,pituitary,meningioma,60.45,False
+pituitary/p (664).jpg,pituitary,pituitary,99.74,True
+pituitary/Tr-pi_575.jpg,pituitary,pituitary,92.68,True
+pituitary/Tr-pi_773.jpg,pituitary,pituitary,99.38,True
+pituitary/Tr-pi_539.jpg,pituitary,pituitary,98.8,True
+pituitary/p (566).jpg,pituitary,pituitary,95.83,True
+pituitary/Tr-pi_105.jpg,pituitary,pituitary,99.48,True
+pituitary/Tr-pi_1123.jpg,pituitary,pituitary,98.71,True
+pituitary/Tr-pi_130.jpg,pituitary,pituitary,95.6,True
+pituitary/p (692).jpg,pituitary,pituitary,99.09,True
+pituitary/Tr-pi_346.jpg,pituitary,pituitary,97.39,True
+pituitary/Tr-pi_726.jpg,pituitary,pituitary,99.43,True
+pituitary/p (820).jpg,pituitary,pituitary,99.58,True
+pituitary/Tr-pi_871.jpg,pituitary,pituitary,83.65,True
+pituitary/p (318).jpg,pituitary,pituitary,99.35,True
+pituitary/Tr-pi_1076.jpg,pituitary,pituitary,99.31,True
+pituitary/Tr-pi_355.jpg,pituitary,pituitary,99.67,True
+pituitary/Tr-pi_229.jpg,pituitary,pituitary,98.8,True
+pituitary/Tr-pi_915.jpg,pituitary,pituitary,96.68,True
+pituitary/p (193).jpg,pituitary,pituitary,95.66,True
+pituitary/Tr-pi_449.jpg,pituitary,pituitary,99.92,True
+pituitary/p (458).jpg,pituitary,pituitary,98.99,True
+pituitary/p (437).jpg,pituitary,pituitary,99.65,True
+pituitary/Tr-pi_1127.jpg,pituitary,pituitary,99.85,True
+pituitary/Tr-pi_280.jpg,pituitary,pituitary,99.71,True
+pituitary/p (317).jpg,pituitary,pituitary,99.42,True
+pituitary/Tr-pi_1196.jpg,pituitary,pituitary,70.13,True
+pituitary/p (327).jpg,pituitary,pituitary,96.58,True
+pituitary/p (514).jpg,pituitary,pituitary,81.25,True
+pituitary/p (752).jpg,pituitary,pituitary,96.68,True
+pituitary/Tr-pi_944.jpg,pituitary,pituitary,87.67,True
+pituitary/Tr-pi_891.jpg,pituitary,pituitary,98.32,True
+pituitary/p (629).jpg,pituitary,pituitary,90.23,True
+pituitary/p (29).jpg,pituitary,pituitary,78.72,True
+pituitary/Tr-pi_1161.jpg,pituitary,pituitary,62.36,True
+pituitary/p (344).jpg,pituitary,pituitary,99.11,True
+pituitary/p (583).jpg,pituitary,pituitary,98.97,True
+pituitary/p (410).jpg,pituitary,pituitary,98.34,True
+pituitary/p (501).jpg,pituitary,pituitary,90.7,True
+pituitary/p (85).jpg,pituitary,pituitary,94.48,True
+pituitary/p (38).jpg,pituitary,pituitary,96.34,True
+pituitary/Tr-pi_1038.jpg,pituitary,pituitary,99.04,True
+pituitary/Tr-pi_817.jpg,pituitary,pituitary,95.52,True
+pituitary/p (467).jpg,pituitary,pituitary,97.52,True
+pituitary/Tr-pi_1270.jpg,pituitary,pituitary,99.79,True
+pituitary/Tr-pi_636.jpg,pituitary,pituitary,85.81,True
+pituitary/p (548).jpg,pituitary,pituitary,98.44,True
+pituitary/p (129).jpg,pituitary,pituitary,54.18,True
+pituitary/Tr-pi_326.jpg,pituitary,pituitary,99.73,True
+pituitary/Tr-pi_496.jpg,pituitary,pituitary,97.84,True
+pituitary/p (567).jpg,pituitary,pituitary,95.83,True
+pituitary/Tr-pi_551.jpg,pituitary,pituitary,94.96,True
+pituitary/Tr-pi_6.jpg,pituitary,pituitary,91.24,True
+pituitary/Tr-pi_1206.jpg,pituitary,pituitary,95.77,True
+pituitary/Tr-pi_1107.jpg,pituitary,pituitary,97.71,True
+pituitary/Tr-pi_961.jpg,pituitary,pituitary,99.69,True
+pituitary/Tr-pi_958.jpg,pituitary,pituitary,97.35,True
+pituitary/p (287).jpg,pituitary,pituitary,98.09,True
+pituitary/p (325).jpg,pituitary,pituitary,95.61,True
+pituitary/p (203).jpg,pituitary,pituitary,94.03,True
+pituitary/Tr-pi_1036.jpg,pituitary,pituitary,97.29,True
+pituitary/Tr-pi_498.jpg,pituitary,pituitary,99.66,True
+pituitary/Tr-pi_746.jpg,pituitary,pituitary,96.88,True
+pituitary/Tr-pi_31.jpg,pituitary,pituitary,99.92,True
+pituitary/p (720).jpg,pituitary,pituitary,94.5,True
+pituitary/p (761).jpg,pituitary,pituitary,97.72,True
+pituitary/Tr-pi_463.jpg,pituitary,pituitary,98.68,True
+pituitary/p (709).jpg,pituitary,pituitary,99.42,True
+pituitary/Tr-pi_1055.jpg,pituitary,pituitary,97.32,True
+pituitary/p (649).jpg,pituitary,pituitary,97.57,True
+pituitary/Tr-pi_1281.jpg,pituitary,pituitary,99.56,True
+pituitary/Tr-pi_558.jpg,pituitary,pituitary,99.58,True
+pituitary/Tr-pi_931.jpg,pituitary,pituitary,97.73,True
+pituitary/p (124).jpg,pituitary,pituitary,99.71,True
+pituitary/Tr-pi_27.jpg,pituitary,pituitary,99.16,True
+pituitary/p (231).jpg,pituitary,pituitary,98.64,True
+pituitary/Tr-pi_1204.jpg,pituitary,pituitary,98.49,True
+pituitary/Tr-pi_494.jpg,pituitary,pituitary,98.79,True
+pituitary/p (158).jpg,pituitary,pituitary,97.79,True
+pituitary/Tr-pi_940.jpg,pituitary,pituitary,98.15,True
+pituitary/Tr-pi_1034.jpg,pituitary,pituitary,98.2,True
+pituitary/p (745).jpg,pituitary,pituitary,99.69,True
+pituitary/Tr-pi_549.jpg,pituitary,pituitary,99.47,True
+pituitary/Tr-pi_497.jpg,pituitary,pituitary,74.05,True
+pituitary/Tr-pi_1029.jpg,pituitary,pituitary,90.28,True
+pituitary/Tr-pi_1091.jpg,pituitary,pituitary,98.94,True
+pituitary/p (670).jpg,pituitary,pituitary,99.55,True
+pituitary/p (539).jpg,pituitary,pituitary,94.99,True
+pituitary/Tr-pi_951.jpg,pituitary,pituitary,98.77,True
+pituitary/Tr-pi_455.jpg,pituitary,pituitary,72.28,True
+pituitary/Tr-pi_460.jpg,pituitary,pituitary,99.07,True
+pituitary/p (658).jpg,pituitary,pituitary,95.9,True
+pituitary/p (608).jpg,pituitary,pituitary,85.81,True
+pituitary/Tr-pi_730.jpg,pituitary,pituitary,67.55,True
+pituitary/Tr-pi_673.jpg,pituitary,pituitary,97.3,True
+pituitary/Tr-pi_175.jpg,pituitary,pituitary,99.57,True
+pituitary/Tr-pi_217.jpg,pituitary,pituitary,95.68,True
+pituitary/p (304).jpg,pituitary,pituitary,98.9,True
+pituitary/p (237).jpg,pituitary,pituitary,98.35,True
+pituitary/p (730).jpg,pituitary,pituitary,91.43,True
+pituitary/Tr-pi_409.jpg,pituitary,pituitary,99.5,True
+pituitary/p (282).jpg,pituitary,pituitary,95.64,True
+pituitary/Tr-pi_1310.jpg,pituitary,pituitary,99.31,True
+pituitary/Tr-pi_347.jpg,pituitary,pituitary,97.99,True
+pituitary/Tr-pi_470.jpg,pituitary,pituitary,70.01,True
+pituitary/Tr-pi_965.jpg,pituitary,pituitary,98.27,True
+pituitary/Tr-pi_103.jpg,pituitary,pituitary,96.0,True
+pituitary/p (291).jpg,pituitary,pituitary,98.32,True
+pituitary/p (727).jpg,pituitary,pituitary,67.55,True
+pituitary/p (165).jpg,pituitary,pituitary,99.16,True
+pituitary/p (694).jpg,pituitary,pituitary,99.26,True
+pituitary/Tr-pi_1345.jpg,pituitary,pituitary,99.85,True
+pituitary/p (442).jpg,pituitary,pituitary,99.53,True
+pituitary/p (114).jpg,pituitary,pituitary,97.92,True
+pituitary/Tr-pi_788.jpg,pituitary,pituitary,99.93,True
+pituitary/Tr-pi_1051.jpg,pituitary,pituitary,99.78,True
+pituitary/Tr-pi_181.jpg,pituitary,pituitary,99.71,True
+pituitary/Tr-pi_273.jpg,pituitary,pituitary,99.14,True
+pituitary/Tr-pi_901.jpg,pituitary,pituitary,98.51,True
+pituitary/Tr-pi_893.jpg,pituitary,pituitary,93.97,True
+pituitary/p (582).jpg,pituitary,pituitary,81.22,True
+pituitary/Tr-pi_946.jpg,pituitary,pituitary,99.25,True
+pituitary/Tr-pi_157.jpg,pituitary,pituitary,99.83,True
+pituitary/Tr-pi_832.jpg,pituitary,pituitary,99.22,True
+pituitary/p (590).jpg,pituitary,pituitary,99.51,True
+pituitary/Tr-pi_292.jpg,pituitary,pituitary,99.03,True
+pituitary/p (452).jpg,pituitary,pituitary,99.49,True
+pituitary/p (181).jpg,pituitary,pituitary,99.9,True
+pituitary/p (42).jpg,pituitary,pituitary,99.72,True
+pituitary/Tr-pi_380.jpg,pituitary,pituitary,97.29,True
+pituitary/p (524).jpg,pituitary,pituitary,96.06,True
+pituitary/p (588).jpg,pituitary,pituitary,98.35,True
+pituitary/p (23).jpg,pituitary,pituitary,54.37,True
+pituitary/Tr-pi_1015.jpg,pituitary,pituitary,72.52,True
+pituitary/Tr-pi_584.jpg,pituitary,pituitary,97.92,True
+pituitary/Tr-pi_1336.jpg,pituitary,pituitary,55.12,True
+pituitary/p (30).jpg,pituitary,pituitary,76.21,True
+pituitary/p (351).jpg,pituitary,pituitary,98.21,True
+pituitary/p (49).jpg,pituitary,pituitary,97.42,True
+pituitary/p (800).jpg,pituitary,pituitary,99.95,True
+pituitary/Tr-pi_28.jpg,pituitary,pituitary,97.27,True
+pituitary/Tr-pi_1116.jpg,pituitary,pituitary,97.64,True
+pituitary/Tr-pi_1189.jpg,pituitary,pituitary,90.18,True
+pituitary/p (149).jpg,pituitary,pituitary,99.33,True
+pituitary/p (477).jpg,pituitary,pituitary,99.5,True
+pituitary/Tr-pi_801.jpg,pituitary,pituitary,73.89,True
+pituitary/Tr-pi_1113.jpg,pituitary,pituitary,89.88,True
+pituitary/Tr-pi_295.jpg,pituitary,pituitary,98.64,True
+pituitary/Tr-pi_1300.jpg,pituitary,pituitary,99.56,True
+pituitary/Tr-pi_397.jpg,pituitary,pituitary,83.1,True
+pituitary/Tr-pi_161.jpg,pituitary,pituitary,99.0,True
+pituitary/p (675).jpg,pituitary,pituitary,88.41,True
+pituitary/Tr-pi_492.jpg,pituitary,pituitary,87.91,True
+pituitary/Tr-pi_456.jpg,pituitary,pituitary,99.75,True
+pituitary/p (556).jpg,pituitary,pituitary,85.8,True
+pituitary/p (230).jpg,pituitary,pituitary,89.13,True
+pituitary/Tr-pi_757.jpg,pituitary,pituitary,98.83,True
+pituitary/p (213).jpg,pituitary,pituitary,97.87,True
+pituitary/Tr-pi_381.jpg,pituitary,pituitary,98.06,True
+pituitary/p (682).jpg,pituitary,pituitary,94.9,True
+pituitary/Tr-pi_1187.jpg,pituitary,pituitary,72.28,True
+pituitary/Tr-pi_583.jpg,pituitary,pituitary,99.46,True
+pituitary/Tr-pi_484.jpg,pituitary,pituitary,98.91,True
+pituitary/p (125).jpg,pituitary,pituitary,99.17,True
+pituitary/p (660).jpg,pituitary,pituitary,56.4,True
+pituitary/Tr-pi_714.jpg,pituitary,pituitary,94.09,True
+pituitary/p (69).jpg,pituitary,pituitary,97.94,True
+pituitary/Tr-pi_1234.jpg,pituitary,pituitary,98.15,True
+pituitary/p (186).jpg,pituitary,pituitary,99.43,True
+pituitary/p (448).jpg,pituitary,pituitary,98.09,True
+pituitary/Tr-pi_262.jpg,pituitary,pituitary,99.39,True
+pituitary/Tr-pi_1053.jpg,pituitary,pituitary,98.32,True
+pituitary/p (603).jpg,pituitary,pituitary,99.03,True
+pituitary/Tr-pi_823.jpg,pituitary,pituitary,98.41,True
+pituitary/Tr-pi_1040.jpg,pituitary,pituitary,93.5,True
+pituitary/Tr-pi_513.jpg,pituitary,pituitary,98.5,True
+pituitary/p (100).jpg,pituitary,pituitary,97.16,True
+pituitary/Tr-pi_267.jpg,pituitary,pituitary,97.72,True
+pituitary/Tr-pi_230.jpg,pituitary,pituitary,97.26,True
+pituitary/p (714).jpg,pituitary,pituitary,99.03,True
+pituitary/Tr-pi_36.jpg,pituitary,pituitary,95.07,True
+pituitary/p (826).jpg,pituitary,pituitary,97.77,True
+pituitary/p (403).jpg,pituitary,pituitary,78.71,True
+pituitary/Tr-pi_318.jpg,pituitary,pituitary,98.2,True
+pituitary/p (233).jpg,pituitary,pituitary,97.9,True
+pituitary/p (319).jpg,pituitary,pituitary,99.62,True
+pituitary/Tr-pi_299.jpg,pituitary,pituitary,94.58,True
+pituitary/Tr-pi_47.jpg,pituitary,pituitary,97.92,True
+pituitary/Tr-pi_716.jpg,pituitary,pituitary,98.4,True
+pituitary/p (196).jpg,pituitary,pituitary,99.72,True
+pituitary/p (443).jpg,pituitary,pituitary,97.84,True
+pituitary/Tr-pi_640.jpg,pituitary,pituitary,90.77,True
+pituitary/Tr-pi_514.jpg,pituitary,pituitary,88.2,True
+pituitary/p (444).jpg,pituitary,pituitary,97.05,True
+pituitary/Tr-pi_119.jpg,pituitary,pituitary,99.38,True
+pituitary/Tr-pi_271.jpg,pituitary,pituitary,89.58,True
+pituitary/Tr-pi_478.jpg,pituitary,pituitary,98.27,True
+pituitary/Tr-pi_485.jpg,pituitary,pituitary,95.69,True
+pituitary/Tr-pi_199.jpg,pituitary,pituitary,99.03,True
+pituitary/p (645).jpg,pituitary,pituitary,99.55,True
+pituitary/p (7).jpg,pituitary,pituitary,99.72,True
+pituitary/Tr-pi_301.jpg,pituitary,pituitary,99.56,True
+pituitary/p (379).jpg,pituitary,pituitary,99.88,True
+pituitary/Tr-pi_430.jpg,pituitary,pituitary,92.73,True
+pituitary/p (469).jpg,pituitary,pituitary,99.67,True
+pituitary/Tr-pi_1233.jpg,pituitary,pituitary,78.71,True
+pituitary/Tr-pi_118.jpg,pituitary,pituitary,96.91,True
+pituitary/p (774).jpg,pituitary,pituitary,98.06,True
+pituitary/p (44).jpg,pituitary,pituitary,99.49,True
+pituitary/Tr-pi_1213.jpg,pituitary,pituitary,98.11,True
+pituitary/Tr-pi_319.jpg,pituitary,pituitary,54.35,True
+pituitary/p (817).jpg,pituitary,pituitary,96.93,True
+pituitary/Tr-pi_94.jpg,pituitary,pituitary,99.14,True
+pituitary/p (187).jpg,pituitary,pituitary,95.31,True
+pituitary/Tr-pi_963.jpg,pituitary,pituitary,96.45,True
+pituitary/Tr-pi_589.jpg,pituitary,pituitary,99.81,True
+pituitary/Tr-pi_998.jpg,pituitary,pituitary,97.38,True
+pituitary/Tr-pi_553.jpg,pituitary,pituitary,98.24,True
+pituitary/Tr-pi_129.jpg,pituitary,pituitary,85.8,True
+pituitary/p (755).jpg,pituitary,pituitary,99.8,True
+pituitary/Tr-pi_491.jpg,pituitary,pituitary,99.69,True
+pituitary/p (339).jpg,pituitary,pituitary,99.48,True
+pituitary/Tr-pi_685.jpg,pituitary,pituitary,99.21,True
+pituitary/Tr-pi_189.jpg,pituitary,pituitary,85.26,True
+pituitary/Tr-pi_840.jpg,pituitary,pituitary,98.19,True
+pituitary/p (759).jpg,pituitary,pituitary,99.38,True
+pituitary/p (145).jpg,pituitary,pituitary,98.72,True
+pituitary/Tr-pi_729.jpg,pituitary,pituitary,97.34,True
+pituitary/Tr-pi_843.jpg,pituitary,pituitary,86.51,True
+pituitary/Tr-pi_1387.jpg,pituitary,pituitary,99.41,True
+pituitary/Tr-pi_1214.jpg,pituitary,pituitary,81.37,True
+pituitary/Tr-pi_345.jpg,pituitary,pituitary,91.05,True
+pituitary/Tr-pi_1173.jpg,pituitary,pituitary,98.42,True
+pituitary/p (220).jpg,pituitary,pituitary,98.72,True
+pituitary/p (809).jpg,pituitary,pituitary,99.76,True
+pituitary/Tr-pi_222.jpg,pituitary,pituitary,98.34,True
+pituitary/Tr-pi_287.jpg,pituitary,pituitary,90.59,True
+pituitary/Tr-pi_296.jpg,pituitary,pituitary,99.2,True
+pituitary/Tr-pi_1222.jpg,pituitary,pituitary,99.28,True
+pituitary/Tr-pi_16.jpg,pituitary,pituitary,98.95,True
+pituitary/Tr-pi_623.jpg,pituitary,pituitary,96.36,True
+pituitary/p (385).jpg,pituitary,pituitary,96.49,True
+pituitary/Tr-pi_215.jpg,pituitary,pituitary,99.06,True
+pituitary/Tr-pi_29.jpg,pituitary,pituitary,98.99,True
+pituitary/Tr-pi_91.jpg,pituitary,meningioma,60.15,False
+pituitary/Tr-pi_769.jpg,pituitary,pituitary,97.23,True
+pituitary/p (307).jpg,pituitary,pituitary,99.04,True
+pituitary/Tr-pi_500.jpg,pituitary,pituitary,66.12,True
+pituitary/Tr-pi_768.jpg,pituitary,pituitary,98.87,True
+pituitary/p (678).jpg,pituitary,pituitary,51.16,True
+pituitary/Tr-pi_349.jpg,pituitary,pituitary,94.32,True
+pituitary/p (637).jpg,pituitary,pituitary,81.26,True
+pituitary/Tr-pi_681.jpg,pituitary,pituitary,80.55,True
+pituitary/p (275).jpg,pituitary,pituitary,98.27,True
+pituitary/Tr-pi_625.jpg,pituitary,pituitary,99.58,True
+pituitary/Tr-pi_43.jpg,pituitary,pituitary,99.56,True
+pituitary/Tr-pi_950.jpg,pituitary,pituitary,98.3,True
+pituitary/Tr-pi_334.jpg,pituitary,pituitary,99.6,True
+pituitary/p (301).jpg,pituitary,pituitary,97.69,True
+pituitary/Tr-pi_1164.jpg,pituitary,pituitary,98.77,True
+pituitary/Tr-pi_1247.jpg,pituitary,pituitary,95.14,True
+pituitary/Tr-pi_356.jpg,pituitary,pituitary,59.31,True
+pituitary/p (650).jpg,pituitary,pituitary,85.5,True
+pituitary/Tr-pi_183.jpg,pituitary,pituitary,80.23,True
+pituitary/Tr-pi_382.jpg,pituitary,pituitary,99.17,True
+pituitary/Tr-pi_733.jpg,pituitary,pituitary,98.67,True
+pituitary/p (270).jpg,pituitary,pituitary,99.37,True
+pituitary/Tr-pi_1100.jpg,pituitary,pituitary,98.09,True
+pituitary/p (665).jpg,pituitary,pituitary,99.48,True
+pituitary/p (22).jpg,pituitary,pituitary,66.12,True
+pituitary/Tr-pi_231.jpg,pituitary,pituitary,99.53,True
+pituitary/p (337).jpg,pituitary,pituitary,74.82,True
+pituitary/Tr-pi_363.jpg,pituitary,pituitary,91.68,True
+pituitary/Tr-pi_1339.jpg,pituitary,pituitary,98.82,True
+pituitary/Tr-pi_111.jpg,pituitary,pituitary,82.94,True
+pituitary/p (504).jpg,pituitary,pituitary,90.62,True
+pituitary/p (229).jpg,pituitary,pituitary,81.12,True
+pituitary/p (408).jpg,pituitary,pituitary,99.44,True
+pituitary/Tr-pi_418.jpg,pituitary,pituitary,99.31,True
+pituitary/Tr-pi_762.jpg,pituitary,pituitary,96.9,True
+pituitary/p (785).jpg,pituitary,pituitary,99.73,True
+pituitary/Tr-pi_1283.jpg,pituitary,pituitary,99.33,True
+pituitary/p (381).jpg,pituitary,pituitary,97.79,True
+pituitary/Tr-pi_820.jpg,pituitary,pituitary,97.07,True
+pituitary/Tr-pi_910.jpg,pituitary,pituitary,90.48,True
+pituitary/p (135).jpg,pituitary,pituitary,53.24,True
+pituitary/Tr-pi_1158.jpg,pituitary,pituitary,98.72,True
+pituitary/Tr-pi_882.jpg,pituitary,pituitary,99.81,True
+pituitary/p (43).jpg,pituitary,pituitary,99.81,True
+pituitary/Tr-pi_630.jpg,pituitary,pituitary,94.88,True
+pituitary/Tr-pi_1138.jpg,pituitary,pituitary,88.22,True
+pituitary/Tr-pi_581.jpg,pituitary,pituitary,92.63,True
+pituitary/Tr-pi_156.jpg,pituitary,pituitary,98.57,True
+pituitary/Tr-pi_1131.jpg,pituitary,pituitary,98.72,True
+pituitary/p (570).jpg,pituitary,pituitary,72.91,True
+pituitary/Tr-pi_1351.jpg,pituitary,pituitary,90.65,True
+pituitary/p (102).jpg,pituitary,pituitary,99.34,True
+pituitary/p (33).jpg,pituitary,pituitary,79.8,True
+pituitary/p (228).jpg,pituitary,pituitary,76.89,True
+pituitary/Tr-pi_424.jpg,pituitary,pituitary,99.54,True
+pituitary/p (211).jpg,pituitary,pituitary,93.28,True
+pituitary/Tr-pi_982.jpg,pituitary,pituitary,95.73,True
+pituitary/p (397).jpg,pituitary,pituitary,98.33,True
+pituitary/Tr-pi_665.jpg,pituitary,pituitary,96.42,True
+pituitary/Tr-pi_1239.jpg,pituitary,pituitary,98.67,True
+pituitary/Tr-pi_259.jpg,pituitary,pituitary,97.95,True
+pituitary/Tr-pi_195.jpg,pituitary,pituitary,84.29,True
+pituitary/Tr-pi_438.jpg,pituitary,pituitary,99.65,True
+pituitary/Tr-pi_1326.jpg,pituitary,pituitary,99.42,True
+pituitary/p (591).jpg,pituitary,pituitary,99.81,True
+pituitary/p (243).jpg,pituitary,pituitary,98.25,True
+pituitary/Tr-pi_373.jpg,pituitary,pituitary,97.18,True
+pituitary/p (620).jpg,pituitary,pituitary,98.3,True
+pituitary/Tr-pi_495.jpg,pituitary,pituitary,99.61,True
+pituitary/Tr-pi_532.jpg,pituitary,pituitary,96.05,True
+pituitary/p (513).jpg,pituitary,pituitary,81.41,True
+pituitary/Tr-pi_338.jpg,pituitary,pituitary,98.69,True
+pituitary/Tr-pi_1080.jpg,pituitary,pituitary,99.39,True
+pituitary/Tr-pi_241.jpg,pituitary,pituitary,98.66,True
+pituitary/p (352).jpg,pituitary,pituitary,96.0,True
+pituitary/Tr-pi_446.jpg,pituitary,pituitary,99.53,True
+pituitary/p (138).jpg,pituitary,pituitary,61.49,True
+pituitary/Tr-pi_959.jpg,pituitary,pituitary,87.11,True
+pituitary/Tr-pi_1185.jpg,pituitary,pituitary,99.08,True
+pituitary/p (140).jpg,pituitary,pituitary,95.0,True
+pituitary/p (308).jpg,pituitary,pituitary,98.03,True
+pituitary/Tr-pi_90.jpg,pituitary,pituitary,99.24,True
+pituitary/Tr-pi_1377.jpg,pituitary,pituitary,98.77,True
+pituitary/Tr-pi_930.jpg,pituitary,pituitary,90.16,True

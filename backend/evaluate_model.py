@@ -45,7 +45,7 @@ def parse_args():
     parser.add_argument(
         "--weights",
         type=Path,
-        default=BACKEND_DIR / "xai_api" / "best_brain_tumor_model_customCNN.pth",
+        default=BACKEND_DIR / "xai_api" / "best_brain_tumor_model_customCNN_glioma15.pth",
         help="Path to the ResidualCustomCNN state-dict checkpoint used by the API.",
     )
     parser.add_argument(

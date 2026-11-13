@@ -30,3 +30,6 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+
+/home/mati/Dokumenty/brainscans_xai/backend/test_results_glioma15.csv
+/home/mati/Dokumenty/brainscans_xai/backend/test_results_glioma15.json

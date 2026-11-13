@@ -1,0 +1,70 @@
+{
+  "checkpoint": "/app/xai_api/best_brain_tumor_model_focal_glioma.pth",
+  "seed": 42,
+  "glioma_loss_weight": 2.5,
+  "focal_gamma": 2.0,
+  "learning_rate": 0.0003,
+  "loss": 0.07442446818109877,
+  "accuracy_percent": 97.99173065564088,
+  "macro_f1_percent": 98.02744886627437,
+  "classes": {
+    "glioma": {
+      "precision_percent": 96.9298245614035,
+      "recall_percent": 99.32584269662922,
+      "f1_percent": 98.11320754716982,
+      "support": 445
+    },
+    "meningioma": {
+      "precision_percent": 98.58156028368793,
+      "recall_percent": 93.91891891891892,
+      "f1_percent": 96.19377162629756,
+      "support": 444
+    },
+    "notumor": {
+      "precision_percent": 98.61878453038673,
+      "recall_percent": 99.44289693593315,
+      "f1_percent": 99.02912621359224,
+      "support": 359
+    },
+    "pituitary": {
+      "precision_percent": 98.00884955752213,
+      "recall_percent": 99.5505617977528,
+      "f1_percent": 98.7736900780379,
+      "support": 445
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "glioma",
+      "meningioma",
+      "notumor",
+      "pituitary"
+    ],
+    "rows_actual_columns_predicted": [
+      [
+        442,
+        3,
+        0,
+        0
+      ],
+      [
+        14,
+        417,
+        5,
+        8
+      ],
+      [
+        0,
+        1,
+        357,
+        1
+      ],
+      [
+        0,
+        2,
+        0,
+        443
+      ]
+    ]
+  }
+}
