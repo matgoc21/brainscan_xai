@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics, permissions
 from django.shortcuts import render
+from django.db.models import Q
 from rest_framework.parsers import FormParser , MultiPartParser
 from .serializers import MRIUploadSerializer, ScanAnalysisSerializer, PatientSerializer
 from .xai_service import generate_gradcam_and_predict
@@ -40,21 +41,37 @@ class ScanListCreateView(generics.ListCreateAPIView):
     permission_classes = [permissions.IsAuthenticated]
    # parser_classes = [MultiParser, FormParser]
 
+    # def get_queryset(self):
+    #     user = self.request.user
+    #     queryset = ScanAnalysis.objects.filter(user=user).select_related('patient')
+    #     search_query = self.request.query_params.get('search')
+    #     predicted_class = self.request.query_params.get('class')
+    #     if predicted_class:
+    #         queryset = queryset.filter(predicted_class__iexact=predicted_class)       
+    #     if search_query:
+    #         queryset = queryset.filter(patient_id__icontains=search_query)
+
+    #     return queryset
     def get_queryset(self):
-        user = self.request.user
-        queryset = ScanAnalysis.objects.filter(user=user).select_related('patient')
-        search_query = self.request.query_params.get('search')
+        queryset = ScanAnalysis.objects.filter(user=self.request.user).select_related('patient')
+
         target_class = self.request.query_params.get('class')
         if target_class:
-            queryset = queryset.filter(predicted_class__iexact=target_class)       
+            queryset = queryset.filter(predicted_class__iexact=target_class)
+
+        search_query = self.request.query_params.get('search')
         if search_query:
-            queryset = queryset.filter(patient_id__icontains=search_query)
+            queryset = queryset.filter(
+                Q(patient__identifier__icontains=search_query)
+                | Q(patient__first_name__icontains=search_query)
+                | Q(patient__last_name__icontains=search_query)
+            )
 
         return queryset
 
     def create(self, request, *args, **kwargs):
         image_file = request.FILES.get('image')
-        patient_id = request.data.get('patient_identifier', 'Anonimowy')
+        patient_id = request.data.get('patient_identifier', '').strip()
 
         if not patient_id:
             return Response({"error": "Podanie ID pacjenta jest wymagane."},status=status.HTTP_400_BAD_REQUEST,)
@@ -148,7 +165,7 @@ class ScanListCreateView(generics.ListCreateAPIView):
             original_image=image_file,
             heatmap_image=analysis_result['heatmap_file'],
             predicted_class=analysis_result['prediction'],
-            confidence=analysis_result['confidence'],
+            confidence_percent=analysis_result['confidence'],
             probabilities=analysis_result['probabilities'],
         )
         
@@ -201,3 +218,10 @@ class ScanDetailView(generics.RetrieveDestroyAPIView):
 
         if not patient.scans.exists():
             patient.delete()
+class PatientListView(generics.ListAPIView):
+    serializer_class = PatientSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        
+        return Patient.objects.filter(scans__user=self.request.user).distinct()
