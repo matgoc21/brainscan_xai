@@ -186,18 +186,39 @@ def train():
 
     model = ResidualCustomCNN(num_classes=len(class_names)).to(device)
 
-    class_weights = torch.ones(len(class_names), device=device)
-    class_weights[class_names.index("glioma")] = args.glioma_loss_weight
+    # class_weights = torch.ones(len(class_names), device=device)
+    # class_weights[class_names.index("glioma")] = args.glioma_loss_weight
+
+    train_subset = train_loader.dataset
+    train_targets = [train_subset.dataset.targets[i] for i in train_subset.indices]
+    class_counts = torch.bincount(
+        torch.tensor(train_targets, dtype=torch.long),
+        minlength=len(class_names),
+    ).float()
+
+    class_weights = class_counts.sum() / (len(class_names) * class_counts)
+    # Dodatkowy priorytet (boost) dla glioma liczony względem zbalansowanej bazy
+    class_weights[class_names.index("glioma")] *= args.glioma_loss_weight
+    class_weights = class_weights.to(device)
+
+    print("Liczebność klas (train):", dict(zip(class_names, class_counts.int().tolist())))
+    print("Wagi klas w Focal Loss:", {c: round(w, 3) for c, w in zip(class_names, class_weights.tolist())})
 
     train_criterion = WeightedFocalLoss(weight=class_weights, gamma=args.focal_gamma)
     validation_criterion = nn.CrossEntropyLoss()
 
+    # optimizer = optim.AdamW(
+    #     model.parameters(), lr=args.learning_rate, weight_decay=1e-2
+    # )
+    # scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+    #     optimizer, mode="min", factor=0.5, patience=5
+    # )
     optimizer = optim.AdamW(
-        model.parameters(), lr=args.learning_rate, weight_decay=1e-2
+    model.parameters(), lr=args.learning_rate, weight_decay=1e-3
     )
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode="min", factor=0.5, patience=5
-    )
+    scheduler = optim.lr_scheduler.CosineAnnealingLR(
+    optimizer, T_max=args.epochs, eta_min=1e-6
+    )   
 
     best_composite_score = -1.0
     best_metrics = (0.0, 0.0)
@@ -239,8 +260,10 @@ def train():
         )
 
         # Kompozytowy wynik premiujący wysokie glioma_recall przy zachowaniu wysokiego macro F1
-        composite_score = 0.4 * macro_f1 + 0.6 * glioma_recall
-        scheduler.step(validation["loss"])
+        #composite_score = 0.4 * macro_f1 + 0.6 * glioma_recall
+        composite_score = 0.8 * macro_f1 + 0.2 * glioma_recall
+        #scheduler.step(validation["loss"])
+        scheduler.step()
 
         if composite_score > best_composite_score:
             best_composite_score = composite_score

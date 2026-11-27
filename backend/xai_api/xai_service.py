@@ -14,7 +14,7 @@ from .model import BrainTumorResNet , CustomCNN, ResidualCustomCNN
 device = torch.device("cpu")
 model = ResidualCustomCNN(num_classes=4) #zmienic na CustomCNN, po wytrenowaniu
 
-model.load_state_dict(torch.load('xai_api/best_brain_tumor_model_focal_glioma.pth', map_location=device))
+model.load_state_dict(torch.load('xai_api/best_brain_tumor_model_focal_v2.pth', map_location=device))
 model.eval()
 
 CLASSES = ['glioma', 'meningioma', 'notumor', 'pituitary']
