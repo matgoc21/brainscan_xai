@@ -11,7 +11,7 @@ from .models import ScanAnalysis, Patient
 
 MAX_UPLOAD_SIZE_MB = 15
 # Create your views here.
-#Old
+#Old 
 class AnalyzeMRIView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = MRIUploadSerializer(data=request.data)

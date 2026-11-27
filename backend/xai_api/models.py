@@ -33,6 +33,10 @@ class ScanAnalysis(models.Model):
 
     class Meta:
         ordering = ['-created_at']
+        indexes = [
+            models.Index(fields=['user', '-created_at'], name='idx_scan_user_created'),
+            models.Index(fields=['user', 'predicted_class'], name='idx_scan_user_class'),
+        ]
 
     def __str__(self):
         return f"[{self.patient.identifier}] {self.predicted_class} ({self.confidence_percent}%) - {self.created_at.strftime('%Y-%m-%d %H:%M')}"

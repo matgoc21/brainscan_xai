@@ -15,7 +15,6 @@ class ScanAnalysisSerializer(serializers.ModelSerializer):
         model = ScanAnalysis
         fields = ['id', 
                 'patient',
-                #'patient_id', 
                 'original_image', 
                 'heatmap_image', 
                 'predicted_class',
@@ -23,4 +22,4 @@ class ScanAnalysisSerializer(serializers.ModelSerializer):
                 'probabilities',
                 'created_at',
                 ]
-        read_only_fields = ['id','predicted_class', 'confidence_percent', 'prbabilities', 'created_at', 'heatmap_image']
+        read_only_fields = ['id','predicted_class', 'confidence_percent', 'probabilities', 'created_at', 'heatmap_image']
